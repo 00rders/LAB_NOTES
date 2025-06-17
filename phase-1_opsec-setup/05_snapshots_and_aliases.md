@@ -28,7 +28,7 @@ alias cls='clear'
 alias cleanapt='sudo apt autoremove -y && sudo apt autoclean -y'
 ```
 
-## 🧠 WHat I Learned
+## 🧠 What I Learned
 - **Snapshots** = instant time machine. If malware or mis-configs break the vm, I can restore it to a previously saved version
 - **Aliases** boost efficiency, enforce good habits, and reduce typo risk on long commands
 - Reloading shell configs "( source ~/.zshrc )" makes changes live without a reboot
