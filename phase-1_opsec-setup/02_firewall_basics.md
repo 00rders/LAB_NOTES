@@ -11,6 +11,9 @@ sudo ufw default allow outgoing
 sudo ufw enable
 sudo ufw status verbose
 ```
+- Verified the firewall status and rules
+- Ensured that outbound traffic (browser traffic, apt updates) still worked
+
 ## 🧠 What I Learned
 - "ufw" simplifies managing network rules compared to raw "iptables"
 - Default-deny inbound policy helps reduce exopusre
