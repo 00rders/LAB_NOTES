@@ -31,25 +31,13 @@ Understanding the Linux file system structure is crucial for navigating and mana
 
 ---
 
-### ✅ Future Topics to Explore:
-- **File Permissions and Ownership**: Advanced topics like ACLs, special permissions (SUID, SGID, sticky bits).
-- **Pipes and Redirection**: Using pipes (`|`) to chain commands and redirect output (`>`, `>>`, `2>`, `&>`) for powerful workflows.
-- **Process Management**: Managing and monitoring processes with `ps`, `top`, `kill`, and `htop`.
-- **Searching and Finding**: More advanced searching tools like `locate`, `ack`, and `ag`.
-- **File Compression and Archiving**: Using commands like `tar`, `gzip`, `zip`, and `unzip`.
-- **Shell Scripting**: Automating tasks with shell scripts, conditional statements, loops, and functions.
-
----
-
 ## 🔑 Quiz Results
 
 **Linux File System Structure Quiz**  
-- **Total Score**: 8/10  
+- **Total Score**: 7/10  
 - **Mistakes**:  
   - **Question 6**: `/media` stores external device mount points, not configuration files for devices.
   - **Question 7**: User account information is stored in `/etc/passwd`, not `/etc/shadow`.
   - **Question 10**: Temporary files are stored in `/tmp`, not `/var/log`.
-
-User is now ready to move on to the next module.
 
 ---
