@@ -6,7 +6,6 @@ Before diving fully into Linux essentials, I transitioned to a clean user enviro
 ---
 
 ## 🔧 What I Did
-
 ### 🛠️ User Migration & Cleanup
 - Migrated from the default `kali` user to a new `oorders` user for a cleaner OPSEC-focused environment.
 - Transferred my full `opsec-lab/` folder and ensured ownership/permissions were set correctly using `chown` and `chmod`.
