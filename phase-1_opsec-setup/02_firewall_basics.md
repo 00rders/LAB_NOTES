@@ -17,3 +17,4 @@ sudo ufw status verbose
 - Linux firewalls enforce kernel-level filtering at the packet level
 
 ## 🔒 Why It Matters
+Running vulnerable or misconfigured services without a firewall could expose the VM to scanning, exploits, or lateral movement on a shared network. A locked-down firewall is a critical first layer of defense in any OPSEC or pen-testing setup.
