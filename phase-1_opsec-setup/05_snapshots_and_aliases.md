@@ -5,7 +5,7 @@ I need quick “save points” in my lab and faster command execution for daily 
 
 ## 🔧 What I Did
 
-1. Created Key Snapshots in VirtualBox -- **How?:**  
+1. Created Key Snapshots in VirtualBox - **How?:**  
 > *Right-click VM → Snapshots → Take Snapshot → name & description.*
 
 2. Added Helpful Z-shell Aliases  
