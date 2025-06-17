@@ -12,3 +12,8 @@ sudo ufw enable
 sudo ufw status verbose
 ```
 ## 🧠 What I Learned
+- "ufw" simplifies managing network rules compared to raw "iptables"
+- Default-deny inbound policy helps reduce exopusre
+- Linux firewalls enforce kernel-level filtering at the packet level
+
+## 🔒 Why It Matters
