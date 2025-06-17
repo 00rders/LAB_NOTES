@@ -9,7 +9,7 @@ I need quick “save points” in my lab and faster command execution for daily 
 > *Right-click VM → Snapshots → Take Snapshot → name & description.*
 
 2. Added Helpful Z-shell Aliases  
-Appended to `~/.zshrc` and re-loaded with `source ~/.zshrc`.
+> Appended to `~/.zshrc` and re-loaded with `source ~/.zshrc`.
 
 ```bash
 # update system quickly
