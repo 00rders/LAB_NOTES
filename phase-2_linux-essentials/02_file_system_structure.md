@@ -41,3 +41,12 @@ Understanding the Linux file system structure is crucial for navigating and mana
   - **Question 10**: Temporary files are stored in `/tmp`, not `/var/log`.
 
 ---
+
+## 🔑 Quiz Results
+
+**Advanced Linux File System Structure Quiz**  
+- **Total Score**: 7/8  
+- **Mistakes**:  
+  - **Question 6**: `cat /etc/shadow` shows user account names and password hashes, not the contents of `/etc/passwd`.
+  
+
