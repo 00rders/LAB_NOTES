@@ -39,3 +39,13 @@ Understanding user and group management is essential for controlling who has acc
 
 ---
 
+## 🔑 Quiz Results
+
+**Permissions and Users Quiz**  
+- **Total Score**: 3/5  
+- **Mistakes**:  
+  - **Question 3**: `chgrp` is used to change the group ownership of a file, not `chown`.
+  - **Question 5**: The sticky bit prevents users from deleting or renaming files owned by other users in the same directory, not just restricting execution to the root user.
+
+---
+
