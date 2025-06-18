@@ -49,3 +49,11 @@ Understanding user and group management is essential for controlling who has acc
 
 ---
 
+## 🔑 Quiz Results
+
+**Permissions and Users Quiz (extended)**  
+- **Total Score**: 5/5  
+- **Mistakes**: None! ✅
+
+---
+
