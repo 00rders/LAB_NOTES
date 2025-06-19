@@ -123,4 +123,3 @@ Here’s a summary of **what you should expect to see** when running the command
      ```
    - **When to use**: Use this when you have a downloaded `.deb` file that you want to install manually.
 
----
