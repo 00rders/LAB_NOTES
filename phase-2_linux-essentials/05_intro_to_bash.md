@@ -30,6 +30,8 @@ This module introduced the basics of **Bash scripting**, which is crucial for au
 - **System Administration**: Understanding Bash helps with managing servers, backups, logs, and more.
 - **Cybersecurity**: In cybersecurity, scripting helps automate security checks, system monitoring, and other tasks to improve efficiency and reduce human error.
 
+---
+
 ### 🏦 Real-World Application Scenario:
 In a **system administration** role, you are tasked with regularly backing up important directories across a network of servers. Each server is in a different directory structure, and manual backups are time-consuming. Using **Bash scripting**, you can write a script that:
 - Automatically backs up specified directories.
