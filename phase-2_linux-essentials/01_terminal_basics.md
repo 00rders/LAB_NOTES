@@ -52,6 +52,61 @@ By becoming comfortable with these commands, you can quickly adapt to any Linux 
 
 ---
 
+## 🖥️ Expected Output of Commands
+
+Here’s a summary of **what you should expect to see** when running the commands covered in this module, along with **when you would use them**:
+
+1. **`pwd`**  
+   - **Expected Output**: Displays the current working directory.
+     ```
+     /home/user
+     ```
+   - **When to use**: Use when you need to know your current directory.
+
+2. **`ls`**  
+   - **Expected Output**: Lists files and directories in the current directory.
+     ```
+     Desktop  Downloads  Documents  Pictures
+     ```
+   - **When to use**: Use to display the contents of the current directory.
+
+3. **`ls -l`**  
+   - **Expected Output**: Displays detailed information about files (permissions, ownership, size, and modification time).
+     ```
+     -rw-r--r-- 1 user user  4096 Jan 1 12:00 example.txt
+     drwxr-xr-x 2 user user  4096 Jan 1 12:00 Documents
+     ```
+   - **When to use**: Use when you need detailed information about files, such as permissions and ownership.
+
+4. **`cd`**  
+   - **Expected Output**: No visible output, but changes the current directory.
+     - After running `cd Documents`, you’ll be in the `Documents` directory.
+
+   - **When to use**: Use to change the working directory.
+
+5. **`touch filename`**  
+   - **Expected Output**: Creates an empty file (if it doesn't exist).
+     ```
+     (No output, but `filename` is created.)
+     ```
+   - **When to use**: Use when you want to create a new empty file.
+
+6. **`rm filename`**  
+   - **Expected Output**: Removes the specified file.
+     ```
+     (No output unless there’s an error.)
+     ```
+   - **When to use**: Use when you need to delete a file.
+
+7. **`cat filename`**  
+   - **Expected Output**: Displays the contents of a file.
+     ```
+     This is the content of the file.
+     ```
+   - **When to use**: Use to quickly view the contents of a file.
+  
+  ---
+
 ### ✅ Future Topics to Explore:
 - **Advanced File Permissions**: Access Control Lists (ACLs), special permissions (SUID, SGID, sticky bits).
 - **Pipes and Redirection**: Using pipes (`|`) to chain commands and redirecting output (`>`, `>>`, `2>`, `&>`) for powerful workflows.
@@ -60,4 +115,3 @@ By becoming comfortable with these commands, you can quickly adapt to any Linux 
 - **File Compression and Archiving**: Using commands like `tar`, `gzip`, `zip`, and `unzip`.
 - **Shell Scripting**: Automating tasks with shell scripts, conditional statements, loops, and functions.
 
----
