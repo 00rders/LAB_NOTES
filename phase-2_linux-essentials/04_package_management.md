@@ -1,6 +1,5 @@
----
 
-## 04 — Package Management
+# 04 — Package Management
 
 ## 🧩 Context  
 This module covered the basics of package management in Linux. The ability to install, remove, and upgrade packages is essential for managing software and keeping your system up-to-date and secure. We also explored different tools like `apt` and `dpkg` for managing system packages.
