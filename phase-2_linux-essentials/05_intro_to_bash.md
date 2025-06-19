@@ -1,5 +1,5 @@
 
-## 05 — Intro to Bash
+# 05 — Intro to Bash
 
 ## 🧩 Context  
 This module introduced the basics of **Bash scripting**, which is crucial for automating tasks, managing systems, and interacting with the Linux environment. I learned how to write and execute simple scripts, use variables, conditionals, loops, and handle user input.
