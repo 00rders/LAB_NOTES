@@ -47,20 +47,20 @@ I checked the staus of the firewall using `ufw` (uncomplicated firewall) and fou
 sudo ufw disable
 ```
 
-## 🧠 What I Learned
+## 🧠 What I Learned:
 - **Network Configuration**: I learned how to configure a **static IP**, set the **default gateway**, and verify the network configuration.
 - **Network Troubleshooting**: I practiced troubleshooting network connectivity using **ping** and **nmap**.
 - **Firewall and Services**: I explored the status of the firewall and learned how to start and stop services like **Apache**, **Nginx**, and **SSH**.
 - **Service Scanning**: I used **`nmap`** to scan for open ports and identify active services running on the network.
 
 
-## 🔒 Why It Matters
+## 🔒 Why It Matters:
 - **Real-World Application**: This is a foundational skill in network administration and cybersecurity. Configuring static IPs, verifying connectivity, and managing services are essential tasks in maintaining and securing a networked system.
 - **Troubleshooting**: These tasks help develop skills needed for **diagnosing and resolving** network connectivity issues and ensuring that services are properly configured.
 - **Security**: Understanding how to properly configure **SSH** and manage firewalls is key to securing remote access and services.
 
 
-## 🌍 Real-World Application
+## 🌍 Real-World Application Scenario(s):
 - **Network Configuration**: In a real-world scenario, this skill is used when setting up **servers**, **routers**, or other network devices that need consistent access on the network. Properly configuring a static IP is essential to ensure reliable connectivity, especially for **business-critical applications** or **servers** that cannot rely on dynamically assigned IPs.
   
 - **Troubleshooting**: This knowledge is crucial for **network administrators** who must diagnose issues related to connectivity, service availability, and network performance. Knowing how to verify IP configuration, test connectivity, and identify blocked or closed ports is a critical part of resolving network problems quickly.
