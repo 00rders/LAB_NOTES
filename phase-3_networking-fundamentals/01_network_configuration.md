@@ -21,9 +21,13 @@ sudo ip route add default via 192.xxx.x.x
 After setting the static IP, I tested the connectivity
 
 - **Pinged** the **default gateway**
-  `ping 192.xxx.x.x`
+  ```bash
+  ping 192.xxx.x.x
+  ```
 - **Pinged** an **external server** (8.8.8.8 = Googles DNS Server; commonly used to verify internet connectivity)
-  `ping 8.8.8.8`
+  ```bash
+  ping 8.8.8.8
+  ```
 
 ### 3. **Checked for Open Ports and Services with `nmap`**:
 I ran an nmap scan to detect open ports and services in my network
