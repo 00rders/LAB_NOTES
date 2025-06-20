@@ -60,7 +60,7 @@ sudo ufw disable
 - **Security**: Understanding how to properly configure **SSH** and manage firewalls is key to securing remote access and services.
 
 
-## 🌍 Real-World Application Scenario(s)
+## 🏦 Real-World Application Scenario(s)
 - **Network Configuration**: In a real-world scenario, this skill is used when setting up **servers**, **routers**, or other network devices that need consistent access on the network. Properly configuring a static IP is essential to ensure reliable connectivity, especially for **business-critical applications** or **servers** that cannot rely on dynamically assigned IPs.
   
 - **Troubleshooting**: This knowledge is crucial for **network administrators** who must diagnose issues related to connectivity, service availability, and network performance. Knowing how to verify IP configuration, test connectivity, and identify blocked or closed ports is a critical part of resolving network problems quickly.
