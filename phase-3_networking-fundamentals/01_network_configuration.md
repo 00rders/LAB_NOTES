@@ -44,14 +44,12 @@ I checked the staus of the firewall using `ufw` (uncomplicated firewall) and fou
 - **Firewall and Services**: I explored the status of the firewall and learned how to start and stop services like **Apache**, **Nginx**, and **SSH**.
 - **Service Scanning**: I used **`nmap`** to scan for open ports and identify active services running on the network.
 
----
 
 ## 🔒 Why It Matters
 - **Real-World Application**: This is a foundational skill in network administration and cybersecurity. Configuring static IPs, verifying connectivity, and managing services are essential tasks in maintaining and securing a networked system.
 - **Troubleshooting**: These tasks help develop skills needed for **diagnosing and resolving** network connectivity issues and ensuring that services are properly configured.
 - **Security**: Understanding how to properly configure **SSH** and manage firewalls is key to securing remote access and services.
 
----
 
 ## 🌍 Real-World Application
 - **Network Configuration**: In a real-world scenario, this skill is used when setting up **servers**, **routers**, or other network devices that need consistent access on the network. Properly configuring a static IP is essential to ensure reliable connectivity, especially for **business-critical applications** or **servers** that cannot rely on dynamically assigned IPs.
