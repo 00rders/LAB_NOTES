@@ -31,4 +31,3 @@ In this module, I focused on gaining a fundamental understanding of networking c
   - **Configuring network interfaces** and setting static IPs.
   - **Testing connectivity** and troubleshooting using `ping` and other tools.
   - **Exploring network security** and segmentation with hands-on exercises using real tools.
-
