@@ -29,9 +29,13 @@ After setting the static IP, I tested the connectivity
 I ran an nmap scan to detect open ports and services in my network
 
 - **Ping Scan**: Scanned the `192.xxx.x.x/24` range to find active hosts (doesn't scan ports):
-  `nmap -sn 192.xxx.xxx.x.x/24`
+  ```bash
+  nmap -sn 192.xxx.xxx.x.x/24
+  ```
 - **Service Scan**: Ran a port scan and service detection on my VM
-  `nmap -sV 192.xxx.x.xxx`
+  ```bash
+  nmap -sV 192.xxx.x.xxx
+  ```
 
 ### 4. **Firewall Status**:
 I checked the staus of the firewall using `ufw` (uncomplicated firewall) and found it to be **active**, explaining why my scans were returning "all ports closed"
