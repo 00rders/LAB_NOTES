@@ -1,0 +1,40 @@
+# 00 — Prelude to Networking
+
+## 🧩 Context
+In this module, we focus on the fundamental concepts of networking. Rather than manually calculating subnets or diving too deeply into theoretical subnetting, the goal is to understand the **tools** used in real-world networking and apply them in practical scenarios. We will leverage tools like **ipcalc**, **nmap**, and **ping** for network configuration, subnetting, and scanning tasks.
+
+## 🔧 What I Did
+
+### Networking Basics and Tools:
+- **Learned about the purpose and structure of IP addresses**:
+  - **IPv4** vs **IPv6**
+  - **Private vs Public IP addresses**
+- **Subnetting concepts** were explored, focusing on **CIDR notation**, **subnet masks**, and the **network and host portions**.
+  - Subnetting will be automated using tools like **ipcalc**.
+- **Tested basic network connectivity** using:
+  - **ping** for checking device reachability
+  - **traceroute** to visualize the route data takes through the network
+- **Used online and command-line tools** to calculate subnets and check IP ranges:
+  - **`ipcalc`** to automatically calculate subnets, IP ranges, and broadcast addresses.
+  - **Online subnet calculators** to quickly verify subnetting calculations.
+
+### Tools Focus:
+- **Used `nmap`** to explore network scanning and discover devices.
+- **Configured network interfaces** with `ip` and `ifconfig` on Kali Linux.
+- **Tested connectivity** by pinging devices within my local network.
+- **Documented steps in real-world configurations** using the tools for automated subnetting.
+
+## 🧠 What I Learned
+- **Subnetting and CIDR Notation**: I understand how to divide networks into subnets, but I will use tools like **`ipcalc`** and **`subnettingcalculator.com`** for automation.
+- **Network Tools**: Learned how to use **`ping`** for connectivity checks and **`nmap`** for network scanning and discovery. These tools are essential in cybersecurity and network management.
+- **Automation**: Tools like **`ipcalc`** streamline subnetting, reducing manual calculation time and minimizing errors.
+
+## 🔒 Why It Matters
+- **Efficiency**: Automating subnetting and network configuration allows for faster and more accurate network management.
+- **Real-World Application**: These tools are used in actual network setups and security assessments, making them essential for both **networking** and **cybersecurity** professionals.
+- **Practical Network Management**: Understanding how to configure and scan networks is crucial for managing and securing real-world systems.
+
+---
+
+### ✅ Next Steps:
+- Proceed to **Phase 3 Modules** where we'll dive into more practical networking configurations, focusing on **network scanning**, **troubleshooting**, and **network security** using industry-standard tools.
