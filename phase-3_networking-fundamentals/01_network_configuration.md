@@ -39,8 +39,9 @@ I ran an nmap scan to detect open ports and services in my network
 
 ### 4. **Firewall Status**:
 I checked the staus of the firewall using `ufw` (uncomplicated firewall) and found it to be **active**, explaining why my scans were returning "all ports closed"
-
----
+```bash
+sudo ufw disable
+```
 
 ## 🧠 What I Learned
 - **Network Configuration**: I learned how to configure a **static IP**, set the **default gateway**, and verify the network configuration.
