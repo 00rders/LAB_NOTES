@@ -69,5 +69,5 @@ Relevant file: `scripts/gitbackupnow.sh`
 
 ---
 
-✅ This module demonstrates that from early on, I was not just studying security — I was **thinking operationally**, building workflows that ensure I never lose access to critical data and tooling.
+This wasn’t just a learning exercise — it was about making sure I don’t lose my work. The more I build, the more I care about having solid, practical systems in place.
 
