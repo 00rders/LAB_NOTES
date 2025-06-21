@@ -65,9 +65,7 @@ Relevant file: `scripts/gitbackupnow.sh`
 > ⚠️ **Note**: You must have Git installed on the target machine when restoring.  
 > Use `git clone --bundle <filename>.bundle <folder>` for full commit history restoration.
 
-
-
 ---
 
-This wasn’t just a learning exercise — it was about making sure I don’t lose my work. The more I build, the more I care about having solid, practical systems in place.
+✅ This wasn’t just a learning exercise — it was about making sure I don’t lose my work. The more I build, the more I care about having solid, practical systems in place.
 
