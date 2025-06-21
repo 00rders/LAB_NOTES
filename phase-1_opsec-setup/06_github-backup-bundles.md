@@ -2,7 +2,7 @@
 
 ## 🧩 Context
 
-In pursuit of full operational security and independence from platform availability, I recognized an early need to **back up my cybersecurity lab repo outside of GitHub**. Version control is only as reliable as its accessibility — and GitHub, while powerful, is still a third-party service.
+In pursuit of full operational security and independence from platform availability, I recognized an early need to **back up my cybersecurity lab repo outside of GitHub**. Version control is only as reliable as the availability of the platform it's hosted on — and GitHub, while powerful, is still a third-party service.
 
 To address this, I built a custom script-based workflow that creates timestamped `.bundle` backups of my entire lab repository, stored locally on an external SSD. This workflow enables **offline restoration**, **air-gapped archiving**, and **long-term resilience** against GitHub outages, account issues, or repo deletion.
 
@@ -10,11 +10,11 @@ To address this, I built a custom script-based workflow that creates timestamped
 
 ### 🛠️ `gitbackupnow` — A Bash-Based Backup Workflow
 
-- ✅ Written as a standalone Bash wrapper stored in `~/.local/bin/` and added to `$PATH`
-- ✅ Gracefully handles the case when the backup SSD isn’t mounted
-- ✅ Creates `.bundle` files with ISO 8601 timestamps for clean version tracking
-- ✅ Uses native Git tooling (`git bundle`) for complete repository capture
-- ✅ Stores bundles on an external drive for redundancy
+- ✅ Writes to `~/.local/bin/` and integrates with `$PATH`
+- ✅ Handles missing SSDs gracefully with user-facing errors
+- ✅ Creates timestamped `.bundle` files using ISO 8601
+- ✅ Leverages native `git bundle` for complete repo capture
+- ✅ Stores backups securely to an external SSD
 
 ```bash
 # Example output:
@@ -60,10 +60,12 @@ Relevant file: `scripts/gitbackupnow.sh`
 > You run `gitbackupnow`, plug your SSD into a fresh Kali VM on-site, and restore the bundle using:
 >
 > ```bash
-> git clone cybersec-lab-notes-backup-2025-06-21.bundle my-lab
+> git clone cybersec-lab-notes-backup-YYYY-MM-DD.bundle my-lab
 > ```
->
-> Now you have your entire lab — notes, scripts, configs — fully available without touching GitHub.
+> ⚠️ **Note**: You must have Git installed on the target machine when restoring.  
+> Use `git clone --bundle <filename>.bundle <folder>` for full commit history restoration.
+
+
 
 ---
 
