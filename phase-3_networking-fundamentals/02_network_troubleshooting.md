@@ -5,7 +5,6 @@ In this module, I learned how to diagnose and verify basic network connectivity 
 
 This kind of troubleshooting is a foundational part of SOC analyst workflows and helps validate that networking components (DNS, gateway, internet, etc.) are functioning as expected.
 
----
 
 ## 🔧 What I Did
 
@@ -39,7 +38,6 @@ This kind of troubleshooting is a foundational part of SOC analyst workflows and
   - *The system successfully resolved the domain name to an IP*
   - *Confirms that DNS is working properly and outbound traffic is allowed*
 
----
 
 ## 🧠 What I Learned
 
@@ -50,14 +48,12 @@ This kind of troubleshooting is a foundational part of SOC analyst workflows and
 - **TTL** and **time** values show how many hops exist and the response time.
 - **Packet loss** indicates potential issues with connectivity or routing.
 
----
 
 ## 🔒 Why It Matters
 
 - **Critical for SOC Analysts**: Quick ping tests help analysts confirm if a reported issue is network-related before escalating or taking further action.
 - **Diagnostic Foundation**: Understanding how to interpret ICMP responses is a must for effective troubleshooting, especially when working with remote endpoints or investigating alerts.
 
----
 
 ## 🏦 Real-World Application Scenario(s)
 
@@ -67,7 +63,6 @@ This kind of troubleshooting is a foundational part of SOC analyst workflows and
 
 - **Outcome**: This kind of quick triage saves time, narrows scope, and avoids unnecessary escalations — a key skill for any junior SOC analyst.
 
----
 
 ## ✅ Next Steps
 
@@ -75,7 +70,6 @@ This kind of troubleshooting is a foundational part of SOC analyst workflows and
 - Use `traceroute` to understand path tracing.
 - Begin exploring `netstat`, `ss`, and `ifconfig/ip a` for deeper troubleshooting.
 
----
 
 # Module 02: Network Troubleshooting — Traceroute Interpretation
 
