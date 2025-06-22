@@ -20,3 +20,6 @@ This kind of troubleshooting is a foundational part of SOC analyst workflows and
   ...
   4 packets transmitted, 4 received, 0% packet loss
   ```
+- **Observation**
+  - *The network is online and functional*
+  - *No DNS is needed for this test, since we're using a direct IP address
