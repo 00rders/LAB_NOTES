@@ -1,16 +1,22 @@
-### ✅ Section 1A: ping — Connectivity Check
+# Module 02: Network Troubleshooting
 
-Ran the following commands:
+## 🧩 Context
+In this module, I learned how to diagnose and verify basic network connectivity using commands like `ping`, interpreting results for both internal and external targets. These tools are essential for confirming whether a system is reachable and connected to the wider internet or isolated due to misconfiguration or firewall restrictions.
 
-```bash
-ping 8.8.8.8
-ping google.com
-```
-#### Observations:
-- Packets were successfully sent and received.
-- 0% packet loss.
-- DNS resolution from `google.com` to `172.217.12.110` confirms DNS is functioning.
-- RTT (Round-Trip Time) was within a healthy 20–36 ms range.
+This kind of troubleshooting is a foundational part of SOC analyst workflows and helps validate that networking components (DNS, gateway, internet, etc.) are functioning as expected.
 
-#### Real-World Takeaway:
-Basic ping checks verify both local connectivity and DNS resolution. If packet loss or resolution fails, it indicates either physical/network interference or DNS server misconfiguration — often the first steps in triaging SOC alerts.
+---
+
+## 🔧 What I Did
+
+### 1. **Pinged an IP Address Directly**
+- Tested connectivity to Google's DNS server at `8.8.8.8`:
+  ```bash
+  ping 8.8.8.8
+  ```
+- **Result**
+  ```python
+  64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=28.8 ms
+  ...
+  4 packets transmitted, 4 received, 0% packet loss
+  ```
