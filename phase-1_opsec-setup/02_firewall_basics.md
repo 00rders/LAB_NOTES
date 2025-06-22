@@ -21,3 +21,11 @@ sudo ufw status verbose
 
 ## 🔒 Why It Matters
 Running vulnerable or misconfigured services without a firewall could expose the VM to scanning, exploits, or lateral movement on a shared network. A locked-down firewall is a critical first layer of defense in any OPSEC or pen-testing setup.
+
+🤖 What could IRIS do?
+Monitor Firewall Logs: Continuously parse logs (e.g., ufw.log or iptables) to detect port scans, brute-force attempts, or denied outbound traffic.
+
+Alert on Anomalies: Flag unusual ports being opened or closed, especially those deviating from baseline rules.
+
+Automate Rule Validation: Periodically compare live firewall rules against a known-good policy to catch misconfigurations or unauthorized changes.
+
