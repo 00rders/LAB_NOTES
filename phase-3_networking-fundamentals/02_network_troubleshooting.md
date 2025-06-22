@@ -75,3 +75,69 @@ This kind of troubleshooting is a foundational part of SOC analyst workflows and
 - Use `traceroute` to understand path tracing.
 - Begin exploring `netstat`, `ss`, and `ifconfig/ip a` for deeper troubleshooting.
 
+---
+
+# Module 02: Network Troubleshooting — Traceroute Interpretation
+
+## 🧩 Context
+This part of the module focuses on using the `traceroute` command to visually map the path that packets take from the Kali VM to an external domain, in this case: `google.com`. This is a key tool for identifying bottlenecks, packet loss, and upstream ISP issues.
+
+## 🔧 What I Did
+
+### Ran a Basic Traceroute to Google:
+```bash
+traceroute google.com
+```
+
+### Sample Output:
+```scss
+ 1  192.168.x.1
+ 2  192.168.1.1
+ 3  100.93.xxx.x
+ 4  *.ccal.comcast.net          (masked city/PoP)
+ ...
+16  nuq04s43-in-f14.1e100.net   (Google edge)
+```
+
+## 🧠 What I Learned
+
+- **Traceroute Shows the Path**:  
+  The `traceroute` command reveals each network hop between your local machine and a target server (in this case, `google.com`). Each numbered line represents a router or device that the packet passes through.
+
+- **Local and ISP Infrastructure**:  
+  The first few hops are internal to your local network and ISP infrastructure. For example:  
+  - `192.168.x.1` — Your router or access point.  
+  - `100.xxx.xxx.xxx` — Likely Carrier-Grade NAT (CGNAT) addresses used by ISPs.  
+  - `*.comcast.net` — DNS-resolved names showing your packet flowing through different regional routers.
+
+- **Public Transit and Destination**:  
+  The final hops show Google's infrastructure (`*.1e100.net`) with minimal latency, confirming successful end-to-end packet travel across your ISP and backbone networks.
+
+- **Asterisks (*) in Output**:  
+  These indicate a timeout or unresponsive router (not necessarily an issue). Some routers are configured to ignore ICMP Time Exceeded messages used by traceroute.
+
+- **Packet Timing (ms)**:  
+  The millisecond values next to each hop indicate round-trip latency to that hop. It’s useful for identifying bottlenecks or delays in a route.
+
+---
+
+## 🔒 Why It Matters
+
+- **Troubleshooting Power**:  
+  Traceroute is a foundational skill for identifying where a network slowdown, routing failure, or packet loss might be occurring. It's a first step for network analysts when debugging connectivity issues.
+
+- **ISP and Backbone Awareness**:  
+  Knowing how to read hostnames like `yubacity.ca.ccal.comcast.net` gives you insight into how your packets flow through regional infrastructure and major internet backbones.
+
+- **Security Relevance**:  
+  Traceroute can be used in penetration testing to **map out internal networks** if responses are not filtered, revealing organizational infrastructure and geographic data that may aid in targeting.
+
+---
+
+## 🏦 Real-World Application Scenario
+
+- **SOC Analyst**:  
+  A customer reports slow access to cloud services. As the first responder, you use `traceroute` to identify whether the issue lies within the customer’s local network, their ISP, or the destination provider’s infrastructure.
+
+- **Red Team Scenario**:  
+  During external recon, an ethical hacker runs `traceroute` to a company’s public IP. The output reveals naming conventions and geographic locations of firewalls, routers, and regional nodes, helping map the target's footprint.
