@@ -1,0 +1,12 @@
+# 06 — Network Lab Segmentation (Capstone)
+
+This module marks the culmination of my Phase 3 networking work. It consolidates concepts like:
+- NAT-based VM isolation
+- Secure NAS positioning
+- Public Wi-Fi OPSEC for portable labs
+- Remote access design
+- Future VLAN/pfSense expansion
+
+🛠️ The full documentation lives in [`projects/network-lab-segmentation`](../../projects/network-lab-segmentation), where I walk through the full architecture, decisions, and setups.
+
+This module serves as the final checkpoint before progressing to more advanced network defense and offensive tooling.
