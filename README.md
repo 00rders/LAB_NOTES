@@ -84,4 +84,4 @@ This repo is not just a portfolio — it’s a **record of real work**:
 I’m `@00rders`, a self-taught cybersecurity learner with a Security+ cert and a passion for the blue team side of defense.  
 I specialize in thinking through problems, building practical tools, and documenting everything like it matters — because it does.
 
-This lab was my starting point. The job is what comes next.
+This lab was my starting point. 
