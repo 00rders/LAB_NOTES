@@ -1,41 +1,73 @@
-# 🧠 Cybersecurity Lab Notes
+# 🧠 Cybersecurity Lab Notes — Blue Team Simulations & Personal Learning Journey
 
-> **Educational Use Only**  
-This repository documents my personal cybersecurity lab environment, built for hands-on learning in ethical hacking, system administration, and threat detection.  
-All tools and techniques are used in **legally controlled environments** and are never intended for unauthorized access to external systems. Always operate within the law and with explicit permission.
+> **For Educational Use Only**  
+This repository documents my personal cybersecurity lab — a hands-on, legally controlled environment for learning ethical hacking, blue team operations, and system defense.
 
----
-
-## 🧱 Lab Structure
-
-This lab follows a modular format designed for long-term scalability and clarity:
-```plaintext
-phase-[X][topic]/
-└── [module-number][title].md
-```
-
-**Example:**  
-`phase-1_opsec-setup/01_lab_setup.md`
-
-Each phase maps to a core area of cybersecurity progression (e.g. Linux, Networking, SIEM, Pentesting).  
-This structure supports clean versioning, documentation reuse, and clear portfolio presentation.
+Everything here is built and tested in isolated or authorized environments. I do not condone or practice unauthorized system access. Always operate within the law.
 
 ---
 
-## 🛠️ Tools I Built to Support This Lab
+## 🧭 Repo Structure
 
-### `gitbackupnow.sh`  
-> **Portable version-controlled backup system**
+This lab is organized into two main tracks:
 
-A custom Bash script that automates versioned `.bundle` backups of this repository (and others).  
-It ensures offline portability and robust recovery — useful for air-gapped environments, disaster recovery, or system rebuilds.
+| Folder             | Description                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| `SOC_TRACK/`       | Real-world alert simulations, incident walkthroughs, and MITRE-tagged triage |
+| `PERSONAL_STUDY/`  | Modular learning phases: Linux, OPSEC, Networking, Pentesting, and more      |
+| `projects/`        | Experimental tooling, scripts, and system builds (e.g., IRIS, backup tools)  |
+| `ai-playbook/`     | AI workflows and prompt engineering experiments                              |
+| `restructure_plan.md` | Repo cleanup and optimization roadmap                                     |
 
 ---
 
-## 📌 Notes
+## 🚨 What’s in `SOC_TRACK/`?
 
-- Every module in this lab was built from hands-on experimentation and genuine curiosity.
+Each alert simulation mimics a real SOC analyst workflow:
+- Triage tags and enrichment actions (WHOIS, VT, internal logs)
+- User & asset context
+- MITRE ATT&CK technique mapping
+- Final incident verdict + response actions
+- IRIS CLI output and auto-generated markdown reports when used
 
-- While the structure is organized for portfolio readability, the content itself reflects a real learning journey.
+> These are designed to demonstrate not just what I know — but how I think in real-world scenarios.
 
-- This repository is a living record of my growth, driven by passion, problem-solving, and persistence.
+---
+
+## 🧠 IRIS Integration (Optional Tooling)
+
+This lab is supported by **IRIS**, my local-first SOC assistant project that automates:
+- Log parsing
+- Alert triage
+- IOC enrichment
+- Report generation
+
+IRIS modules are shown in action throughout `SOC_TRACK/`, but the full AI system is still private for now.
+
+---
+
+## 🔧 Tools I’ve Built
+
+### `gitbackupnow.sh`
+> *Versioned, portable repo backup system*
+
+Bash script to create `.bundle` Git backups of this lab and others. Ideal for disaster recovery, system rebuilds, or offline work.
+
+---
+
+## 📘 Learning Philosophy
+
+This repo is not a showcase of perfection — it’s a **living, version-controlled journal** of real growth:
+
+- Each `.md` file came from doing, breaking, and rebuilding — not copying
+- Every command was typed and tested in a live lab (Kali VM, OpenMediaVault NAS, custom network)
+- While the folders are organized for clarity, the journey was messy, intense, and real
+
+---
+
+## 💬 Who Built This?
+
+I'm `@00rders`, a self-taught cybersecurity learner with real hands-on skills and a Security+ certification.  
+My mission is to land a job where I can keep growing, contribute meaningfully, and never stop learning.
+
+---
