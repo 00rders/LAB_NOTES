@@ -7,7 +7,7 @@
 
 ## 🔍 Problem
 
-* New Linux user (`00rders`) created via OpenMediaVault had an empty home directory
+* New Linux user (`[username]`) created via OpenMediaVault had an empty home directory
 * No `.bashrc`, `.profile`, or `.ssh/authorized_keys`
 * SSH access failed with "connection refused"
 * Logging in locally revealed bare minimum shell
@@ -43,7 +43,7 @@ This ensures SSH can authenticate using a key pair, and denies insecure access t
 ### Step 3: Confirm Access
 
 ```bash
-ssh 00rders@cyber-nas  # From your main machine
+ssh [username]@[internal-hostname]  # From your main machine
 ```
 
 Shell access should now be passwordless and secured.
@@ -60,4 +60,4 @@ Shell access should now be passwordless and secured.
 
 ## 📂 Outcome
 
-System restored to full usability. SSH hardened. User now safe to use for Git operations, remote control, and automation.
+System restored to full usability. SSH hardened. User now safe to use for secure shell access and remote administration.
