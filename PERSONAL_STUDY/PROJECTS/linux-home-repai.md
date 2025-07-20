@@ -1,63 +1,36 @@
-# 🔧 Linux User Home Recovery & SSH Hardening
+# 💪 Resolved Linux User Access Issue on Headless NAS
 
-> **Use Case**: A broken Linux user account on a headless NAS, missing default shell configuration and SSH key setup.
-> **Goal**: Fully restore usability and secure remote access in a no-AI, no-GUI environment.
+### 🧠 Context
 
----
-
-## 🔍 Problem
-
-* New Linux user (`00rders`) created via OpenMediaVault had an empty home directory
-* No `.bashrc`, `.profile`, or `.ssh/authorized_keys`
-* SSH access failed with "connection refused"
-* Logging in locally revealed bare minimum shell
+While working on a headless Linux NAS environment, I encountered a misconfigured user account that lacked essential shell configuration files and secure SSH access. This is a common scenario in SOCs and infrastructure teams, especially when dealing with automation tools like OpenMediaVault or Ansible.
 
 ---
 
-## ✅ Recovery Steps
+## 🔍 The Issue
 
-### Step 1: Restore Shell Environment
-
-```bash
-cp /etc/skel/.bashrc ~/
-cp /etc/skel/.profile ~/
-```
-
-These reinitialize proper shell behavior — aliases, PATHs, prompt formatting, etc.
+* The user’s home directory was missing `.bashrc`, `.profile`, and `.ssh/authorized_keys`
+* SSH login failed with `connection refused`
+* Local shell access revealed no startup environment or user config
 
 ---
 
-### Step 2: Secure `.ssh/` Directory for Key-Based Login
+## 🔧 What I Did
 
-```bash
-mkdir -p ~/.ssh
-chmod 700 ~/.ssh
-nano ~/.ssh/authorized_keys  # Paste in public key
-chmod 600 ~/.ssh/authorized_keys
-```
-
-This ensures SSH can authenticate using a key pair, and denies insecure access to key files.
+* Manually restored shell defaults from `/etc/skel` to enable a usable terminal environment
+* Created and secured the `.ssh` directory with correct file permissions (`700` on `.ssh`, `600` on `authorized_keys`)
+* Installed the appropriate public key to re-enable passwordless, key-based SSH login
+* Verified secure shell access from remote systems
 
 ---
 
-### Step 3: Confirm Access
+## 📘 Why It Matters
 
-```bash
-ssh 00rders@cyber-nas  # From your main machine
-```
-
-Shell access should now be passwordless and secured.
+SSH access issues like this are easy to overlook but can cripple automation pipelines, monitoring, or incident response in SOCs. Knowing how to restore functionality under constrained conditions — without a GUI or AI assistant — is a critical skill for system administrators and security analysts.
 
 ---
 
-## 🧠 Real-World Notes (SOC or Infra Environment)
+## ✅ Result
 
-* This situation often happens in headless environments or auto-created users (OMV, Ansible, etc.)
-* SSH will *silently fail* if `.ssh` permissions are too loose or `authorized_keys` is missing
-* Fixing a user like this without GUI or AI assistance is a core survival task for SOC analysts, sysadmins, and IT support techs
-
----
-
-## 📂 Outcome
-
-System restored to full usability. SSH hardened. User now safe to use for Git operations, remote control, and automation.
+* Fully restored user functionality and hardened remote access
+* System is now usable for secure Git operations, scripting, and remote management
+* Documentation was created for future SOP use in similar headless or restricted environments
