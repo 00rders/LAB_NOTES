@@ -1,60 +1,40 @@
-# Regenerate the boot banner with HOT-LAB branding instead of IRIS
-hotlab_banner_script = """#!/bin/bash
+# ─── HOT LAB BOOT BANNER ──────────────────────────────────────────────
 
-# ────────────────────────────────────────────────────────────
-# 🚀 HOT-LAB MOBILIZATION SEQUENCE
-# Displays aesthetic boot banner for field workstation
-# Keeps IRIS branding separate for clarity
-# ────────────────────────────────────────────────────────────
-
-clear
-
-# 🔥 Custom HOT-LAB ASCII Art Header
+# 🔥 3D ASCII BANNER
+echo -e "\e[1;36m"
 cat << "EOF"
-         _____  _______ _______     __      ____   ____  _______ 
-        |  __ \\|__   __|__   __|   /\\ \\    / /\\ \\ / /\\ \\ / / ____|
-        | |__) |  | |     | |     /  \\ \\  / /  \\ V /  \\ V / (___  
-        |  _  /   | |     | |    / /\\ \\ \\/ / /\\ \\ / /\\ \\ /\\___ \\ 
-        | | \\ \\   | |     | |   / ____ \\  / ____ \\ /  ____/____) |
-        |_|  \\_\\  |_|     |_|  /_/    \\_\\/_/    \\_\\/_/    |_____/ 
+ ___  ___  ________  _________        ___       ________  ________     
+|\  \|\  \|\   __  \|\___   ___\     |\  \     |\   __  \|\   __  \    
+\ \  \\\  \ \  \|\  \|___ \  \_|     \ \  \    \ \  \|\  \ \  \|\ /_   
+ \ \   __  \ \  \\\  \   \ \  \       \ \  \    \ \   __  \ \   __  \  
+  \ \  \ \  \ \  \\\  \   \ \  \       \ \  \____\ \  \ \  \ \  \|\  \ 
+   \ \__\ \__\ \_______\   \ \__\       \ \_______\ \__\ \__\ \_______\
+    \|__|\|__|\|_______|   \|__|        \|_______|\|__|\|__|\|_______|
 EOF
+echo -e "\e[0m"
 
-sleep 0.7
+# 💠 INTERLOCK HEADER
+echo -e "\e[1;34m                ~ IRIS: INTERLOCK INITIATED ~\e[0m"
+echo -e "\e[1;30m────────────────────────────────────────────────────────────\e[0m"
 
-# 🔄 Animated System Boot Progress Bar
-steps=(
-    "Booting Hot-Lab Environment..."
-    "Loading Terminal Customizations..."
-    "Verifying Git Config..."
-    "Establishing Tailscale Tunnel..."
-    "Detecting VMs..."
-    "Parsing Operator Dotfiles..."
-    "Activating CLI Enhancements..."
-    "Calibrating System Variables..."
-    "Loading Operator HUD..."
-    "HOT-LAB READY FOR DEPLOYMENT"
-)
+# ⏳ MODULE LOAD SEQUENCE
+sleep 0.4; echo -e "\e[1;32m[■□□□□□□□□□]  Booting Modules...\e[0m"
+sleep 0.3; echo -e "\e[1;33m[■■□□□□□□□□]  Checking Git Status...\e[0m"
+sleep 0.3; echo -e "\e[1;33m[■■■□□□□□□□]  Verifying SSH Keys...\e[0m"
+sleep 0.3; echo -e "\e[1;34m[■■■■□□□□□□]  Establishing Tailscale Link...\e[0m"
+sleep 0.3; echo -e "\e[1;36m[■■■■■□□□□□]  Scanning VMs...\e[0m"
+sleep 0.3; echo -e "\e[1;36m[■■■■■■□□□□]  Parsing DOTFILES...\e[0m"
+sleep 0.3; echo -e "\e[1;35m[■■■■■■■□□□]  Initializing Operator HUD...\e[0m"
+sleep 0.3; echo -e "\e[1;35m[■■■■■■■■□□]  Setting System Variables...\e[0m"
+sleep 0.3; echo -e "\e[1;32m[■■■■■■■■■□]  Activating Monitor Layer...\e[0m"
+sleep 0.3; echo -e "\e[1;32m[■■■■■■■■■■]  ALL SYSTEMS ONLINE\e[0m"
 
-for i in "${!steps[@]}"; do
-    filled=$((i+1))
-    bar=$(printf "%${filled}s" | tr ' ' '■')
-    empty=$(printf "%$((10-filled))s" | tr ' ' '□')
-    echo "[${bar}${empty}]  ${steps[$i]}"
-    sleep 0.3
-done
+# 📊 SYSTEM STATUS PANEL
+echo -e "\e[1;30m────────────────────────────────────────────────────────────\e[0m"
+echo -e "  \e[1;37mOPERATOR:\e[0m 00rders            \e[1;37mENV:\e[0m Mobile Ops / Hot Lab"
+echo -e "  \e[1;37mBRANCH:\e[0m main                \e[1;31mGIT:\e[0m ⇡1 ⇣0 OUT OF SYNC ⚠️"
+echo -e "  \e[1;37mTAILSCALE:\e[0m 🔒 Connected       \e[1;37mVMs:\e[0m Kali ✅  Ubuntu ✅"
+echo -e "\e[1;30m────────────────────────────────────────────────────────────\e[0m"
 
-echo ""
-echo "────────────────────────────────────────────────────────────"
-echo "  OPERATOR: 00rders            ENV: Mobile Ops / Hot-Lab"
-echo "  MODE: Terminal Ops           STATUS: Field Ready ✅"
-echo "  VMs: Kali ✅  Ubuntu ✅       TAILSCALE: 🔒 Connected"
-echo ""
-echo "────────────────────────────────────────────────────────────"
-echo -e "> \e[1;32mENVIRONMENT ACTIVE — LOCK TF IN █\e[0m"
-"""
-
-# Save to a new file
-hotlab_path = Path("/mnt/data/hotlab-banner.sh")
-hotlab_path.write_text(hotlab_banner_script)
-
-hotlab_path.name
+# 🔓 FINAL MESSAGE
+echo -e "\e[1;35m> SYSTEM ACTIVE — LOCK TF IN █\e[0m"
