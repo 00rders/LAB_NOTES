@@ -30,6 +30,50 @@ mv file.txt ~/Documents/    # Move file
 
 ---
 
+## ⚙️ Zsh Environment Essentials
+
+### `~/.zshrc` Overview
+
+* Primary configuration file for the Zsh shell.
+* Executes every time a new interactive terminal is launched.
+* Controls environment variables, theme settings, plugins, aliases, and custom scripts.
+
+### Essential Load Order Knowledge
+
+* Always declare environment variables (like `EDITOR`, `VISUAL`) **before** theme or plugin loading.
+* If using Powerlevel10k, set `POWERLEVEL9K_INSTANT_PROMPT=off` **before** sourcing the instant prompt preamble.
+* Custom scripts or banners should be sourced **after** Oh My Zsh is initialized.
+
+### Example Zshrc Breakdown
+
+```zsh
+# Set default editor
+export EDITOR="micro"
+export VISUAL="micro"
+
+# History behavior
+export HISTCONTROL=ignoredups  # Avoid duplicate commands in history
+
+# Disable Powerlevel10k's instant prompt to allow banner output
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
+# Powerlevel10k instant prompt preloader (must be above everything else)
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Oh My Zsh core setup
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
+
+# Load custom Hot Lab banner (if exists)
+[[ -f ~/.boot-banner/iris-hotlab.sh ]] && source ~/.boot-banner/iris-hotlab.sh
+```
+
+---
+
 ## 🛠️ Git Commands
 
 ### Repo Basics
