@@ -30,8 +30,8 @@ ssh-keygen -t ed25519 -f ~/.ssh/gitops_ed25519 -C "GitHub GitOps key"
 * Choose a **strong passphrase** (store in Bitwarden)
 * Output:
 
-  * Private key: `~/.ssh/gitops_ed25519`
-  * Public key: `~/.ssh/gitops_ed25519.pub`
+  * Private key: `~/.ssh/*_ed25519`
+  * Public key: `~/.ssh/*_ed25519.pub`
 
 ---
 
@@ -41,7 +41,7 @@ Start the SSH agent and add your key:
 
 ```bash
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/gitops_ed25519
+ssh-add ~/.ssh/*_ed25519
 ```
 
 Then configure GitHub to use port 443:
@@ -53,7 +53,7 @@ Host github.com
   Hostname ssh.github.com
   Port 443
   User git
-  IdentityFile ~/.ssh/gitops_ed25519
+  IdentityFile ~/.ssh/*_ed25519
   IdentitiesOnly yes
 ```
 
@@ -65,7 +65,7 @@ Host github.com
 
 If internet is available later:
 
-1. `cat ~/.ssh/gitops_ed25519.pub`
+1. `cat ~/.ssh/*_ed25519.pub`
 2. Copy contents into GitHub at: [https://github.com/settings/keys](https://github.com/settings/keys)
 3. Label it clearly (e.g., `Hot Lab GitOps`)
 
@@ -76,8 +76,8 @@ If internet is available later:
 ```
 ~/
 ├── .ssh/
-│   ├── gitops_ed25519
-│   └── gitops_ed25519.pub
+│   ├── *_ed25519
+│   └── *_ed25519.pub
 ├── .zshrc
 ├── hotgit-backup/
 └── .boot-banner/
@@ -96,7 +96,7 @@ If internet is available later:
 
 ```bash
 ssh-add -D
-ssh-add ~/.ssh/gitops_ed25519
+ssh-add ~/.ssh/*_ed25519
 ```
 
 ### ❌ GitHub asks for HTTPS login
