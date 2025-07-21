@@ -14,7 +14,7 @@ EOF
 echo -e "\e[0m"
 
 # 💠 INTERLOCK HEADER
-echo -e "\e[1;34m                ~ IRIS: INTERLOCK INITIATED ~\e[0m"
+echo -e "\e[1;34m                ~ 00rders: INTERLOCK INITIATED ~\e[0m"
 echo -e "\e[1;30m────────────────────────────────────────────────────────────\e[0m"
 
 # ⏳ MODULE LOAD SEQUENCE
