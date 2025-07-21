@@ -69,7 +69,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Load custom Hot Lab banner (if exists)
-[[ -f ~/.boot-banner/iris-hotlab.sh ]] && source ~/.boot-banner/iris-hotlab.sh
+[[ -f ~/.boot-banner/hotlab-banner.sh ]] && source ~/.boot-banner/hotlab-banner.sh
 ```
 
 ---
@@ -79,20 +79,44 @@ source $ZSH/oh-my-zsh.sh
 ### Repo Basics
 
 ```bash
-git clone <url>             # Clone a repo
-git status                  # See changes
-git add .                   # Stage all changes
-git commit -m "message"    # Commit with message
-git push                    # Push to remote
-git pull                    # Pull latest from remote
+git clone <url>               # Clone a repo
+git status                    # See changes
+git add .                     # Stage all changes
+git commit -m "message"      # Commit with message
+git push                      # Push to remote
+git pull                      # Pull latest from remote
 ```
 
-### Useful Aliases *(to define later)*
+### Common Sync Errors
 
 ```bash
-gitpushall    # Add, commit, and push all changes
-gitstatus     # Shortcut for git status
-gitcheck      # Check current branch & sync state
+git pull --rebase origin main   # Use this if local commits conflict with upstream
+```
+
+### Git SSH Key Setup (Hot Lab)
+
+```bash
+ssh-keygen -t ed25519 -C "gitops@hotlab"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/gitops_ed25519
+```
+
+Then add the public key `~/.ssh/gitops_ed25519.pub` to GitHub.
+
+### `.ssh/config` Entry
+
+```ssh
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/gitops_ed25519
+```
+
+### Repo Sync Troubleshooting
+
+```bash
+git pull origin main           # Merge remote changes if push fails
+git log --oneline --graph     # Visualize commit history
 ```
 
 ---
