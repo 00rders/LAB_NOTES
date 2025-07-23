@@ -127,7 +127,7 @@ PERSONAL_STUDY/PROJECTS/COLD-LAB/coldlab-dualboot-tutorial.md
 
 ## 🔭 Next Step
 
-Write a clean, AI-free troubleshooting and setup manual from this experience — something I can use years from now to recreate this environment with zero internet.
+Write a clean, troubleshooting and setup manual from this experience — something I can use years from now to recreate this environment with zero internet.
 
 ---
 
