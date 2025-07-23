@@ -168,6 +168,3 @@ Saved as: `PERSONAL_STUDY/PROJECTS/COLD-LAB/coldlab-dualboot-tutorial.md`
 * Automate partition/mount logic
 * Script full recovery process with `archinstall`
 
----
-
-This guide is now a permanent part of your ops log. Whenever you're ready, we can start the “Cold Lab Desktop Customization & Ricing” series next.
