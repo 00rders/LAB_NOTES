@@ -1,12 +1,3 @@
----
-
-# Cold Lab Dual Boot: Real-World Linux Install + Bootloader Debugging Experience
-
-### 📁 Location:
-
-`PERSONAL_STUDY/PROJECTS/COLD-LAB/coldlab-dualboot-journal.md`
-
----
 
 ## ✅ Project Overview
 
