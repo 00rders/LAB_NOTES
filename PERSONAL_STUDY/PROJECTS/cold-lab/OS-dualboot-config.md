@@ -1,102 +1,136 @@
+# ColdLab Dual Boot (Linux + Windows): Installation & Debugging Walkthrough
 
-## ✅ Project Overview
-
-**Goal:** Successfully install EndeavourOS alongside Windows 10 on a single PC while preserving all data and enabling clean dual-boot functionality.
-
-**Context:** This was my first attempt at dual-booting Linux on a production desktop. My system already had Windows 10 installed on the C:\ drive with a standard 100MiB EFI partition. I wanted to create a fully functional EndeavourOS desktop environment on a new 200GB partition from my D:\ drive without interfering with my Windows setup.
+This is a full walkthrough of how I set up EndeavourOS alongside Windows 10 on my desktop. What started as a standard dual-boot installation turned into the most technically difficult problem I’ve ever solved. It involved GRUB failures, kernel image issues, misdiagnosed bootloader errors, and lessons learned the hard way — including what happens when you ignore EFI warnings.
 
 ---
 
-## 🔍 Real-World Problem Faced
+## 🧭 Goal
 
-Despite following standard installation steps, my system failed to boot into Linux after install. I spent over 24 hours in a loop of fixing bootloader issues, kernel image errors, and partition misconfigurations. The root cause wasn’t obvious.
-
----
-
-## ⚠️ Root Cause Analysis
-
-* The original 100MiB EFI partition (from Windows) was too small to support Linux kernel image storage
-* I had mounted that EFI partition directly as `/boot`, causing kernel installs to fail with "no space left on device"
-* Despite creating a dedicated `/boot` on the Linux partition, `dracut` was still targeting the wrong EFI path
+* Install EndeavourOS (KDE Plasma) next to my existing Windows 10 install
+* Preserve all data and working Windows boot
+* Build a long-term Linux environment for cybersecurity and development
 
 ---
 
-## 🧠 Solution Summary
+## 🖥️ System Layout
 
-> I resolved the problem by decoupling `/boot` and `/boot/efi`, switching from `dracut` to `mkinitcpio`, and reconfiguring my GRUB install to utilize the correct mount points. I also removed `kernel-install-for-dracut` to prevent default misbehavior.
+* **nvme0n1** – Windows 10 OS (C:) with \~100MiB EFI partition
+* **sda** – 1TB internal HDD, shrunk to reserve \~185GB for Linux (`/dev/sda2`)
+* \**F:\** – External SSD holding GitHub projects and lab backups
 
 ---
 
-## 🔧 Technical Steps Taken
+## ⚙️ Final Setup (Working)
 
-### Partition Setup
+| Component           | Value                                  |
+| ------------------- | -------------------------------------- |
+| Linux Distro        | EndeavourOS (Arch-based)               |
+| Desktop Environment | KDE Plasma (Mercury wallpaper)         |
+| Bootloader          | GRUB (manually installed)              |
+| Kernel Tool         | mkinitcpio (dracut removed)            |
+| EFI Strategy        | Split-boot with corrected kernel paths |
 
-* Windows C: (nvme0n1p1) – 100MiB EFI
-* Linux D: (sda2) – 200GB ext4 root partition for EndeavourOS
+---
 
-### Key Fix Steps
+## 🚧 Problems Encountered
 
-```bash
-# Mount corrected layout
-mount /dev/sda2 /mnt
-mount /dev/nvme0n1p1 /mnt/boot/efi
-arch-chroot /mnt
+### EFI Size Ignored & Initial Missteps
 
-# Replace init system and fix kernel install path
-pacman -R kernel-install-for-dracut
-pacman -S mkinitcpio
-pacman -S linux linux-headers
+At the start, the installer warned me that my EFI partition (\~100MiB) was too small for Linux. I ignored it. That mistake spiraled into days of confusion. Initially, I thought GRUB wasn’t detecting my Linux install because only the Windows Boot Manager showed in `efibootmgr`. I assumed GRUB was misconfigured or missing essential boot entries.
 
-# Install and configure GRUB
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
-grub-mkconfig -o /boot/grub/grub.cfg
+This led me to try manually copying GRUB into the Microsoft EFI path to hijack the boot sequence. I also created a custom EndeavourOS manual boot entry, hoping to force the system to load the right kernel.
+
+### Manual Boot Entry: Kernel Not Found
+
+The custom GRUB entry looked correct, but every attempt failed with `kernel image not found`. This convinced me that GRUB was failing to detect my Linux partition — so I doubled down on troubleshooting GRUB config. But this was a red herring.
+
+### Endless Loop: GRUB & Kernel Errors / Reinstalls 
+
+I entered a frustrating cycle:
+
+* Boot into EndeavourOS Live USB
+* Mount root filesystem and EFI partition
+* Chroot into the installed system
+* Reinstall GRUB + Kernel
+* Reinstall or regenerate kernel
+* Reboot → still only Windows, or kernel panic, or `image not found`
+
+Every time I rebuilt the kernel using `dracut`, it kept writing the kernel image to `/boot/efi` — which pointed to the tiny Windows EFI partition. That partition didn’t have space for a Linux kernel and initrd. Even though I had a separate `/boot` partition on `/dev/sda2`, `dracut` ignored it.
+
+I thought GRUB was failing — but it was the kernel tool writing to the wrong place. A classic case of solving the wrong problem.
+
+---
+
+## 🧠 Final Fix (Step-by-Step)
+
+Once I realized the real problem was how the kernel image was generated (not where GRUB pointed), the fix became clear:
+
+1. **Remove dracut** – the default tool in EndeavourOS
+
+   ```bash
+   sudo pacman -Rns dracut
+   ```
+
+2. **Install mkinitcpio** – Arch’s traditional kernel image builder
+
+   ```bash
+   sudo pacman -S mkinitcpio
+   ```
+
+3. **Regenerate the kernel image**
+
+   ```bash
+   sudo mkinitcpio -P
+   ```
+
+   ✅ This wrote the kernel and initrd to `/boot`, not `/boot/efi`
+
+4. **Reinstall GRUB manually**
+
+   ```bash
+   grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+   grub-mkconfig -o /boot/grub/grub.cfg
+   ```
+
+5. **Reboot → Success** 🎉
+   KDE Plasma finally booted into a stable desktop.
+
+---
+
+## 🧠 Key Lessons
+
+* **EFI Warnings Are Serious**: A 100MiB EFI partition isn’t enough for dual-boot. Resize or rebuild it if possible.
+* **It Wasn’t GRUB**: I wasted hours trying to fix GRUB when the kernel image was the actual issue
+* **Kernel Tools Matter**: `dracut` and `mkinitcpio` behave very differently — especially in where they write image files
+* **Manual Recovery Is Real-World Practice**: I now know how to chroot, mount, inspect EFI paths, and rebuild kernels under pressure
+* **Failing Forward**: The custom boot entry, GRUB path hijack, and trial/error cycle weren’t useless — each helped rule things out and gave me confidence debugging low-level boot issues
+
+---
+
+## 🌌 ColdLab Now
+
+This system is now:
+
+* My full-time Linux dev and cybersecurity workstation
+* Riced with a custom KDE Plasma desktop
+* Backed by Git, SSH keys, synced lab repos, and custom shell configs
+
+---
+
+## 📂 File Location
+
+```
+PERSONAL_STUDY/PROJECTS/COLD-LAB/coldlab-dualboot-tutorial.md
 ```
 
-### Result
+---
 
-✅ Successfully booted into EndeavourOS with KDE Plasma desktop using GRUB, no USB required.
+## 🔭 Next Step
+
+Write a clean, AI-free troubleshooting and setup manual from this experience — something I can use years from now to recreate this environment with zero internet.
 
 ---
 
-## 💡 Key Learnings
+## 💬 Final Thoughts
 
-* Dual-booting isn't just about free space—**EFI structure and bootloader configuration are critical**
-* Arch-based systems like EndeavourOS may default to `dracut` or systemd-boot, but **GRUB + mkinitcpio is more flexible for complex setups**
-* When kernel errors occur post-install, always validate:
-
-  * Mount points: `df -h`, `mount | grep boot`
-  * Disk space: `lsblk -f`, `du -sh /boot`
-  * Package conflicts: `pacman -Qs kernel`
-
----
-
-## 🧰 Skills Demonstrated
-
-* Linux installation and partitioning
-* Bootloader troubleshooting and EFI path debugging
-* Chroot environment usage for post-install repairs
-* System recovery planning with data preservation
-
----
-
-## 🧭 Next Steps
-
-* [ ] Publish a **public-facing tutorial** for dual-boot Linux + Windows on EFI systems
-* [ ] Document `mkinitcpio` vs `dracut` behaviors and defaults for future rebuilds
-* [ ] Add GRUB rescue checklist to `CLI-BIBLE.md`
-
----
-
-## 🎯 Why This Matters (Employer Context)
-
-This project reflects real-world troubleshooting, not ideal conditions. I handled ambiguity, data sensitivity, and deep system-level repairs on a mixed Windows/Linux setup. It required:
-
-* Critical thinking under pressure
-* Command-line rescue skills
-* Clear documentation and reproducible steps
-
-Perfect preparation for a cybersecurity, sysadmin, or SOC role where systems don’t always behave predictably.
-
----
-
-> *"It wasn’t recovery. It was revelation. From EFI chaos to a clean dual-boot desktop — I built this Cold Lab with sweat, syntax, and a stubborn refusal to quit."*
+This experience beat me up — but it gave me real, portable skill. I solved something that couldn’t be fixed by Googling a quick answer. It taught me to slow down, diagnose layer by layer, and validate every assumption. The system boots now, but the real win is everything I learned about EFI, GRUB, kernel generation, and what it actually takes to recover a broken Linux system.
