@@ -34,19 +34,6 @@ This is where I simulate SOC analyst tasks using real logs or handcrafted alerts
 
 ---
 
-## 🧠 IRIS — SOC Copilot (Private for Now)
-
-Many triage entries in this repo are processed through **IRIS** — a CLI tool I designed to:
-
-* Parse logs, extract IOCs, assess alert severity
-* Enrich data from local or API sources
-* Generate markdown reports with context and summaries
-* Create end-of-shift logs to track analyst performance
-
-Code will be made public in future updates. For now, see `SOC_TRACK/` for its real outputs.
-
----
-
 ## 🛠️ Personal Study — Structured Learning by Phase
 
 This folder is my long-term roadmap. Each phase is a full learning module with:
@@ -69,6 +56,18 @@ Each entry is written for both retention and reference — designed for job prep
 ---
 
 ## 🔧 Custom Tools & Scripts
+
+### _IRIS_ — SOC Copilot (Private for Now)
+
+A CLI tool I designed to:
+
+* Parse logs, extract IOCs, assess alert severity
+* Enrich data from local or API sources
+* Generate markdown reports with context and summaries
+* Create end-of-shift logs to track analyst performance
+
+_Code will be made public in future updates. For now, see `SOC_TRACK/` for its real outputs._
+
 
 ### `gitbackupnow.sh`
 
