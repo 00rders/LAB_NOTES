@@ -99,7 +99,7 @@ Everything in this repo was built using a modern, AI-integrated workflow:
 * AI accelerates my work, but I control every command and decision
 * Projects are hands-on first, with AI as a second brain — not a shortcut
 
-> Want a deeper look? [Learn more here →](./README_AI.md)
+> _Want a deeper look? [Learn more here →](./README_AI.md)_
 
 ---
 
