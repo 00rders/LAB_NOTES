@@ -48,7 +48,7 @@ My entire learning system is built around a self-designed AI-augmented workflow 
 * All projects are driven by hands-on execution — AI helps me move faster, but never replaces real understanding
 
 > *“Everything I build is mine. AI helps me test, explain, and document — but I make every decision, write every command, and fix every mistake.”*
-> Learn more about my ai workflows ['README_AI.md']()
+> Learn more about my ai workflows ['README_AI.md'](https://github.com/00rders/cybersec-lab-notes/blob/main/README_AI.md)
 ---
 
 ## 📚 Lab Documentation Highlights
