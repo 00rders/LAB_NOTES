@@ -56,10 +56,3 @@ Whether you're in the middle of a kernel panic, Git push rejection, or EFI meltd
 
 If you found this and it helps you recover, learn, or fix something — it did its job.
 
----
-
-📎 **Location:** `~/hotgit-backup/operator_manual/`
-
-🔄 **Synced via:** SSH over port 443 using `~/.ssh/gitops_ed25519`
-
-🛠️ **Maintained from:** MacBook Hot Lab · Cold Lab Desktop · Secure Nodes
