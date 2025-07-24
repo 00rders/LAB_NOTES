@@ -1,8 +1,10 @@
 # 🧠 Cybersecurity Lab Notes — Blue Team Simulations & Real-World Growth
 
-> **For Educational Use Only**  
-This repository is my cybersecurity learning ground — a version-controlled environment where I built, broke, and rebuilt real systems.  
-All work is performed in **legally controlled labs** and never touches unauthorized infrastructure. I don’t condone illegal access — this is strictly hands-on learning with purpose.
+> \*\*📄 \*\***[View My Resume](./RESUME.md)** — Full breakdown of my self-taught journey, skills, projects, and learning system.
+
+> **For Educational Use Only**
+> This repository is my cybersecurity learning ground — a version-controlled environment where I built, broke, and rebuilt real systems.
+> All work is performed in **legally controlled labs** and never touches unauthorized infrastructure. I don’t condone illegal access — this is strictly hands-on learning with purpose.
 
 ---
 
@@ -10,62 +12,72 @@ All work is performed in **legally controlled labs** and never touches unauthori
 
 This repo is divided into three major tracks:
 
-| Folder             | Description                                                                 |
-|--------------------|-----------------------------------------------------------------------------|
-| `SOC_TRACK/`       | Realistic alert triage drills, MITRE-tagged reports, and analyst-style workflows |
-| `PERSONAL_STUDY/`  | Structured learning phases (Linux, Networking, OPSEC, etc.) — fully hands-on |
-| `PROJECTS/`        | Custom tooling and builds (e.g., IRIS SOC Assistant, backup automation, NAS lab) |
+| Folder            | Description                                                                 |
+| ----------------- | --------------------------------------------------------------------------- |
+| `SOC_TRACK/`      | Alert triage simulations, MITRE-tagged reports, and SOC-style exercises     |
+| `PERSONAL_STUDY/` | My structured self-study roadmap — Linux, Networking, OPSEC, SIEM, and more |
+| `PROJECTS/`       | Custom tooling and lab builds — IRIS, automation scripts, NAS setup         |
 
 ---
 
-## 🚨 SOC_TRACK — Job-Aligned Workflows
+## 🚨 SOC\_TRACK — Job-Aligned Workflows
 
-This is where I simulate real SOC analyst tasks using alerts I created or modified myself:
+This is where I simulate SOC analyst tasks using real logs or handcrafted alerts:
 
-- Parsing and enriching logs (WHOIS, VT, IPs, usernames)
-- Mapping to MITRE ATT&CK tactics and techniques
-- Writing markdown-style incident reports
-- Practicing decision-making in ambiguous scenarios
-- Optional: Running alerts through **IRIS**, my local CLI SOC assistant
+* Parsing logs and enriching IOCs (WHOIS, VirusTotal, etc.)
+* MITRE ATT\&CK mapping for detection coverage
+* Triage narratives and markdown-based report writing
+* Alert decision-making practice using ambiguous signals
+* Powered by **IRIS**, my local SOC assistant (private for now)
 
-> I built these to demonstrate how I **triage, think, and communicate** like someone already on the job.
-
----
-
-## 🧠 IRIS — Custom SOC Assistant (Private for Now)
-
-Many `SOC_TRACK/` files were processed using **IRIS**, a tool I built that:
-
-- Parses raw logs
-- Scores alerts by severity, asset criticality, and IOC reputation
-- Generates markdown reports
-- Helps analysts get to the point faster
-
-The code for IRIS isn’t public yet, but you can see its output in action throughout the lab.
+> Built to demonstrate how I triage, investigate, and communicate like an analyst.
 
 ---
 
-## 🛠️ Personal Study — Modular Phases
+## 🧠 IRIS — SOC Copilot (Private for Now)
 
-My `PERSONAL_STUDY/` folder is where I documented each skill as I learned it:
+Many triage entries in this repo are processed through **IRIS** — a CLI tool I designed to:
 
-- **Phase 1** — OPSEC & lab setup (air-gap workflows, snapshots, secure email)
-- **Phase 2** — Linux (permissions, terminal workflows, Bash scripts)
-- **Phase 3** — Networking (subnetting, private IPs, NAT labs)
-- **Phase 4** — SIEM/SOC foundations (logs, use cases, alert types)
-- **Phase 5** — Offensive techniques (scanning, enumeration, basic payloads)
-- **Phase 6–8** — Advanced techniques, soft skills, and job readiness
+* Parse logs, extract IOCs, assess alert severity
+* Enrich data from local or API sources
+* Generate markdown reports with context and summaries
+* Create end-of-shift logs to track analyst performance
 
-Each module includes: what I did, what I learned, and a real-world example of where it matters.
+Code will be made public in future updates. For now, see `SOC_TRACK/` for its real outputs.
 
 ---
 
-## 🔧 Custom Tools
+## 🛠️ Personal Study — Structured Learning by Phase
+
+This folder is my long-term roadmap. Each phase is a full learning module with:
+
+* What I learned
+* What I built
+* Why it matters in real roles
+
+### 📚 Current Structure
+
+* **Phase 1** — OPSEC & Lab Setup (ProtonMail, air-gap, snapshot workflows)
+* **Phase 2** — Linux Essentials (permissions, navigation, shell commands)
+* **Phase 3** — Networking Foundations (IP, NAT, segmentation, firewall labs)
+* **Phase 4** — SIEM/SOC Concepts (log types, alerting logic, report writing)
+* **Phase 5** — Offensive Basics (Nmap, enumeration, basic exploitation)
+* **Phase 6–8** — Hardening, soft skills, resume polish, and job readiness
+
+Each entry is written for both retention and reference — designed for job prep and future recall.
+
+---
+
+## 🔧 Custom Tools & Scripts
 
 ### `gitbackupnow.sh`
-> Versioned `.bundle` backups for this entire lab
 
-_Built for offline safety, disaster recovery, or snapshot-style archiving — all automated via Bash._
+> Git bundle backup script to snapshot this entire lab to external storage
+
+* Auto-discovers local repos
+* Creates timestamped `.bundle` files
+* Runs rotation logic to retain only latest copies
+* Bash-compatible, GitHub-safe, and offline-capable
 
 ### **Git Commit Workflow (Custom Aliases)**
 
@@ -79,19 +91,35 @@ _These simplify version control in my CLI environments (Hot Lab and Cold Lab) an
 
 ---
 
-## 📘 Learning Philosophy
+## 🤖 AI-Augmented Learning Workflow
 
-This repo is not just a portfolio — it’s a **record of real work**:
+Everything in this repo was built using a modern, AI-integrated workflow:
 
-- Every module was built in a real lab (Kali VM, NAS server, isolated net)
-- Every `.md` file documents *why* each command or step mattered
-- No bloat, no fluff — just progression backed by sweat, mistakes, and iteration
+* I use ChatGPT as a **real-time assistant** — documenting while I build
+* I pause to ask, reflect, and rewrite until concepts stick
+* AI accelerates my work, but I control every command and decision
+* Projects are hands-on first, with AI as a second brain — not a shortcut
+
+> Want a deeper look? [Learn more here →](./README_AI.md)
+
+---
+
+## 📘 Philosophy
+
+This repo isn’t just a portfolio. It’s a record of work — good, bad, real.
+
+* Built in real lab environments (Kali VM, Linux boxes, remote NAS)
+* Each `.md` file documents what happened, why it mattered, and what I learned
+* Optimized for clarity, not fluff — every entry was written to be revisited
 
 ---
 
 ## 🙋 About Me
 
-I’m `@00rders`, a self-taught cybersecurity learner with a Security+ cert and a passion for the blue team side of defense.  
-I specialize in thinking through problems, building practical tools, and documenting everything like it matters — because it does.
+I’m `@00rders`, a self-taught security learner with a passion for systems, blue team defense, and process automation.
 
-This lab was my starting point. 
+* Passed **CompTIA Security+** in 2025
+* Built every tool, lab, and workflow from scratch
+* Currently sprinting through SIEM and SOC-aligned skills to get job-ready
+
+This repo is both my journey and my reference manual. Thanks for reading.
