@@ -1,65 +1,65 @@
-# 🧠 hotgit-backup — Git Repo Storage for 00rders
+# 🧠 OPERATOR MANUAL — README
 
-> Centralized folder for GitHub repos used across all portable systems, SOC automation tools, and cybersecurity lab documentation. Enables version-controlled workflows from mobile terminals like the Hot Lab (MacBook Air).
+> Centralized offline operations manual for all system-critical tools, recovery protocols, and workflows maintained by 00rders across all devices. This folder is designed to function as a self-sufficient, AI-free knowledge base for Linux, Git, dual boot repair, and system configuration — written by experience, not tutorials. It is also intended to help **anyone** who comes across it, especially self-taught operators facing real-world problems.
 
 ---
 
-## 📁 Folder Structure
+## 📚 Manual Contents
+
+`operator_manual/`
 
 ```
-hotgit-backup/
-├── automation-and-tools/      # Scripts like gitbackupnow, gitstatus, pushall
-├── cybersec-lab-notes/        # Full documentation of personal cybersecurity journey
-├── ai-playbook/               # Prompt engineering strategies + workflow automation
-└── iris/                      # IRIS: AI-powered SOC assistant (core system repo)
+├── CLI-BIBLE.md                       # Core Linux + Git command reference
+├── aliases-and-tools.md              # Custom aliases, functions, scripts
+├── git-sync-manual.md                # Git workflow: pushing, checking, status tools
+├── github-backup-troubleshoot-manual.md  # `.bundle` backup workflows + troubleshooting
+├── hotgit-ssh-manual.md              # SSH key setup + GitHub integration
+├── terminal-setup-manual.md          # Zsh, Powerlevel10k, environment config
+├── micro-config-manual.md            # Micro editor theming + customization
+├── user-home-repair-manual.md        # Fixes for broken users, missing home dirs
+├── OS-dualboot-manual.md             # Universal Linux + Windows dual boot recovery
+├── dual-boot-setup-&-troubleshooting.md # Real-world rescue log from Cold Lab
+└── README.md                         # You are here
 ```
 
 ---
 
-## 🔐 Access Method
+## 🔐 Purpose
 
-This repo is cloned and synced using **SSH authentication over port 443**:
+This folder exists to:
 
-```bash
-git@github.com:00rders/REPO_NAME.git
-```
+* Preserve recovery knowledge in case AI tools are unavailable
+* Provide surgical, tested solutions to Linux system failures
+* Track critical Git, SSH, bootloader, and editor setup procedures
+* Help others troubleshoot similar real-world issues
 
-Uses dedicated key: `~/.ssh/gitops_ed25519` with secure passphrase.
-
----
-
-## 🛠️ Common Commands
-
-```bash
-# View sync status
-./gitstatus.sh
-
-# Push all changes across all sub-repos
-./gitpushall.sh
-
-# Check commit status for each repo
-./gitcheck.sh
-```
-
-> Each of these tools lives in `automation-and-tools/` and is executable from anywhere once `~/.local/bin` is configured.
+Every file in this directory was written *after* a real failure, fix, or config rollout — so others don’t have to go through it blind.
 
 ---
 
-## 🧠 Why It Matters
+## 🔁 Designed For Use In:
 
-This setup allows for:
-
-* Safe GitOps workflows from mobile or offline terminals
-* Quick cloning of all repos to new systems
-* SSH-authenticated, credential-less Git usage
-* Full ecosystem control from one command line entry point
-
-The Hot Git backup is your **personal GitHub portal on any machine you touch**.
+* Mobile terminals (MacBook Hot Lab)
+* Full Linux workstations (Cold Lab Desktop)
+* Airgapped or AI-restricted environments
+* Recovery sessions from live USBs or chroot environments
 
 ---
 
-## 📎 Reference
+## 🧠 Operating Philosophy
 
-Stored in: `~/hotgit-backup/` on all systems where portable terminal workflows are enabled.
+> “Tools break. Systems fail. But knowledge is portable.”
 
-Built and maintained from: `MacBook Hot Lab` (lab-admin\@00rders)
+This manual is the long-term memory of a self-taught operator — structured, version-controlled, and sharpened through lived experience.
+
+Whether you're in the middle of a kernel panic, Git push rejection, or EFI meltdown — this folder gets you back.
+
+If you found this and it helps you recover, learn, or fix something — it did its job.
+
+---
+
+📎 **Location:** `~/hotgit-backup/operator_manual/`
+
+🔄 **Synced via:** SSH over port 443 using `~/.ssh/gitops_ed25519`
+
+🛠️ **Maintained from:** MacBook Hot Lab · Cold Lab Desktop · Secure Nodes
