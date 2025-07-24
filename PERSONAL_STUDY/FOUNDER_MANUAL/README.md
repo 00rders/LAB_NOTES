@@ -28,7 +28,7 @@
 
 This folder exists to:
 
-* Preserve recovery knowledge in case AI tools are unavailable
+* Preserve offline recovery knowledge
 * Provide surgical, tested solutions to Linux system failures
 * Track critical Git, SSH, bootloader, and editor setup procedures
 * Help others troubleshoot similar real-world issues
