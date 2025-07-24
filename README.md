@@ -67,6 +67,16 @@ Each module includes: what I did, what I learned, and a real-world example of wh
 
 Built for offline safety, disaster recovery, or snapshot-style archiving — all automated via Bash.
 
+### Git Commit Workflow (Custom Aliases)
+
+I use custom Git aliases to keep commits fast and frequent while working across multiple repos:
+
+- `gadd` → `git add .`
+- `gmessage` → `git commit -m "<message>"`
+- `gpush` → `git push`
+
+These simplify version control in my CLI environments (Hot Lab and Cold Lab) and reinforce clean, consistent Git habits — critical for working across SOC projects and personal labs.
+
 ---
 
 ## 📘 Learning Philosophy
