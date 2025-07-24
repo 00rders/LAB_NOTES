@@ -198,4 +198,16 @@ This tells Git:
 
 ---
 
+# 🔥 UNTRACK A BROKEN OR MOVED FILE FROM GIT (without deleting it)
+# Use when Git is still tracking a file that no longer exists or was moved outside the repo
+
+git rm --cached path/to/file.ext
+git commit -m "Remove orphaned file from tracking"
+git push
+
+# 🧠 WHY IT MATTERS:
+# This tells Git to stop tracking the file in version history, even if it no longer exists locally.
+# Useful when you moved or deleted files outside Git and get errors about "file outside repository".
+
+---
 ✅ Keep this file updated as your workflow evolves. Think of it as your offline co-pilot.
