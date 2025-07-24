@@ -1,8 +1,8 @@
 # 🧠 Cybersecurity Lab Notes — Blue Team Simulations & Real-World Growth
 
-> \*\*📄 \*\***[View My Resume](./RESUME.md)** — Full breakdown of my self-taught journey, skills, projects, and learning system.
+> 📄 **[View My Resume](./RESUME.md)** — **Full breakdown of my self-taught journey, skills, projects, and learning system.**
 
-> **For Educational Use Only**
+> ⚠️ **For Educational Use Only**
 > This repository is my cybersecurity learning ground — a version-controlled environment where I built, broke, and rebuilt real systems.
 > All work is performed in **legally controlled labs** and never touches unauthorized infrastructure. I don’t condone illegal access — this is strictly hands-on learning with purpose.
 
