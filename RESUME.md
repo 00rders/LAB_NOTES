@@ -59,7 +59,18 @@ My entire learning system is built around a self-designed AI-augmented workflow 
 * [`ssh-access.md`](./projects/HOT_LAB/ssh-access.md)
 
 ---
+## 🎥 Live Demonstrations (Coming Soon)
+See selected tools and workflows in action — short GIFs recorded directly from my lab environments.
 
+- 🧠 IRIS Alert Triage Demo — CLI tool auto-parsing logs and generating Markdown reports
+
+- 🧪 Git Workflow on Hot Lab — Commit, push, and backup via GitHub SSH
+
+- 🧾 Log Parsing Workflow — Watch real logs get parsed, filtered, and summarized
+
+- 🛡️ SOC Simulation (in progress) — Example alert > triage > report flow using IRIS modules
+
+---
 ## 📜 Certifications
 
 * ✅ CompTIA Security+ (Passed July 2025)
