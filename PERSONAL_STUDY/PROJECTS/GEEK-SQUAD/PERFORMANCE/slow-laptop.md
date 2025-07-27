@@ -1,7 +1,6 @@
 # 🖥️ Slow Laptop Troubleshooting — Internal Technician Reference
 
-> 📂 Location: `cybersec-lab-notes/personal_study/projects/geek-squad-binder/slow_pc_troubleshooting.md`  
-> 🗓️ Logged by: **Julian Smith** — 2025-07-27  
+> 🗓️ Logged by: **Julian Smith** (n/a) — 2025-07-27  
 > 🏷️ Category: Performance Issue / System Slowness  
 > 🔗 Resources Used: Task Manager, Chrome Extensions, `msconfig`, Windows Updates, CrystalDiskInfo
 
