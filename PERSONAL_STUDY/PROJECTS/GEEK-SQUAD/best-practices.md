@@ -94,3 +94,4 @@ When in doubt: **pause, document, escalate**.
 - Keep printed copy in back office or binder sleeve
 
 ---
+> 🧪 NOTE: This file is an evolving framework. Final structure will be adapted based on Geek Squad’s internal protocols and customer service expectations post-hiring.
