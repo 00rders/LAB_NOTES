@@ -7,10 +7,8 @@ Quick reference binder for common support scenarios encountered during repair in
 ## 📂 Categories
 
 - 🦠 [Malware](./malware/)
-  - [Malware Removal Flow](./malware/malware_removal_flow.md)
 
 - 🖥️ [Performance](./performance/)
-  - [Slow PC Troubleshooting](./performance/slow_pc_troubleshooting.md)
 
 - 🔐 [Accounts](./accounts/)
   - *(coming soon)*
