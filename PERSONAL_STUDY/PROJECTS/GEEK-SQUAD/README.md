@@ -1,7 +1,6 @@
 # 📚 Geek Squad Binder — Field Tech Index
 
-Quick reference binder for common support scenarios encountered during repair intake and troubleshooting.
-
+_**Quick reference binder for common support scenarios encountered during repair intake and troubleshooting.**_
 ---
 
 ## 📂 Categories & Modules
