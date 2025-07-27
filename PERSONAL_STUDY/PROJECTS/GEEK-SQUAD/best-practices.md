@@ -30,7 +30,7 @@ Always start with these:
 ## 🔐 Data Safety SOP
 
 Before you touch:
-- Ask if any data is mission-critical
+- Ask what data matters to them most
 - Confirm backup status or offer it
 - During OS reinstalls or resets: default to **data preservation mode** unless told otherwise
 - Use external SSD or cloud tools when needed
