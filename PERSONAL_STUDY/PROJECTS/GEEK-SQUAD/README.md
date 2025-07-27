@@ -21,6 +21,11 @@ Quick reference binder for common support scenarios encountered during repair in
 - Forgotten Windows login password
 - iCloud/Apple ID recovery requests
 
+### 🧱 Hardware
+- Cracked screens, missing keys, or port damage
+- Laptop won't power on / battery failure
+- Customer asking about upgrade options
+
 ### 💾 Data
 - Customer wants data transferred to new device
 - Recovery after Windows reinstall or crash
@@ -36,7 +41,3 @@ Quick reference binder for common support scenarios encountered during repair in
 - Wi-Fi printer not detected on network
 - Driver installation or configuration issues
 
-### 🧱 Hardware
-- Cracked screens, missing keys, or port damage
-- Laptop won't power on / battery failure
-- Customer asking about upgrade options
