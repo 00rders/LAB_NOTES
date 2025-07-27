@@ -6,11 +6,6 @@ Quick reference binder for common support scenarios encountered during repair in
 
 ## 📂 Categories & Modules
 
-### 🦠 Malware
-- Fake antivirus popups demanding payment
-- "You have 47 viruses!" scareware scams
-- System freezing due to browser-based malware
-
 ### 🖥️ Performance
 - Extremely slow boot or login
 - Chrome or Teams hogging memory
@@ -20,6 +15,11 @@ Quick reference binder for common support scenarios encountered during repair in
 - Locked out of Microsoft account or email
 - Forgotten Windows login password
 - iCloud/Apple ID recovery requests
+
+### 🦠 Malware
+- Fake antivirus popups demanding payment
+- "You have 47 viruses!" scareware scams
+- System freezing due to browser-based malware
 
 ### 🧱 Hardware
 - Cracked screens, missing keys, or port damage
