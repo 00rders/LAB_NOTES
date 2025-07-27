@@ -83,6 +83,6 @@ Check the following:
 
 > “We also found a browser extension or two that might’ve been hogging memory, and once those were removed your system started running much smoother. All your files are safe — nothing was deleted.”
 
-> “Next time, just be cautious about what extensions or apps you install. This kind of slowdown is super common and very fixable.”
+> “Rember to be skeptical of what extensions or apps you install. This kind of slowdown is super common and very fixable.”
 
 ---
