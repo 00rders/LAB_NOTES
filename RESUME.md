@@ -24,7 +24,7 @@ Modular SOC copilot for log parsing, IOC enrichment, and auto-generated incident
 ### 🧪 [Hot Lab – MacBook Cyber Lab Setup](https://github.com/00rders/cybersec-lab-notes/blob/main/projects/HOT_LAB/hotlab-CLI-config.md)
 
 Secure, keyboard-driven Linux CLI setup for on-the-go cybersecurity workflows
-→ *Includes hardened Kali VM, GitHub SSH integration, remote access via Tailscale*
+→ *Includes hardened OS, GitHub SSH integration, remote access via Tailscale*
 
 ### 🧊 [Cold Lab – EndeavourOS Dual-Boot + Desktop Lab](https://github.com/00rders/cybersec-lab-notes/blob/main/projects/COLD-LAB/coldlab-dualboot-tutorial.md)
 
