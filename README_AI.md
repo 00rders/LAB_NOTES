@@ -26,7 +26,7 @@ As a self-taught cybersecurity student, I wanted to accelerate my learning witho
 ## 🧠 Why It Matters
 
 - **Faster learning** without sacrificing depth
-- **Cleaner documentation** for future use and employer transparency
+- **Cleaner documentation** for future use and transparency
 - **Stronger portfolio** built around real technical work and systemized workflows
 
 ## 🔒 Responsible Use
