@@ -35,7 +35,7 @@ Secure, keyboard-driven Linux CLI setup for on-the-go cybersecurity workflows
 Full desktop system recovery + bootloader fix for dual-boot with Windows
 → *Custom ricing, git-sync routines, backup management*
 
-### 💾 [GitHub Bundle Automation](https://github.com/00rders/automation-and-tools)
+### 💾 [GitHub Bundle Automation](https://github.com/00rders/cybersec-lab-notes/blob/main/PERSONAL_STUDY/PROJECTS/cold-lab/dualboot-masterlog.md)
 
 Custom Bash script to generate `.bundle` backups of Git repos with rotation and logging
 → *Offline-capable, works with external SSD, clean CLI feedback*
