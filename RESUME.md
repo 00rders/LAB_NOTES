@@ -30,7 +30,7 @@ Modular SOC copilot for log parsing, IOC enrichment, and auto-generated incident
 Secure, keyboard-driven Linux CLI setup for on-the-go cybersecurity workflows
 → *Hardened OS, GitHub SSH integration, remote access via Tailscale*
 
-### 🧊 [Cold Lab – EndeavourOS Dual-Boot + Desktop Lab](https://github.com/00rders/cybersec-lab-notes/blob/main/PERSONAL_STUDY/PROJECTS/cold-lab/OS-dualboot-config.md)
+### 🧊 [Cold Lab – EndeavourOS Dual-Boot + Desktop Lab](https://github.com/00rders/cybersec-lab-notes/blob/main/PERSONAL_STUDY/PROJECTS/cold-lab/dualboot-masterlog.md)
 
 Full desktop system recovery + bootloader fix for dual-boot with Windows
 → *Custom ricing, git-sync routines, backup management*
