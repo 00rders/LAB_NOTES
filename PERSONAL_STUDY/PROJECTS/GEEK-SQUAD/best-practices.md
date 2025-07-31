@@ -15,6 +15,25 @@
 
 ---
 
+## 🛠️ Common Resources & Tools
+
+**Daily-Use Utilities:**
+- Malwarebytes (offline installer) — quick malware/PUA cleanup  
+- CrystalDiskInfo — check drive health instantly  
+- Windows 10/11 ISO — for reinstalls & repair media  
+- Driver packs — Dell, HP, Lenovo  
+- Autoruns (Sysinternals) — disable stubborn startup items  
+- Portable browser — for testing internet issues
+
+**Go-To Reference Sites:**
+- Microsoft Support KB — official troubleshooting steps  
+- iFixit — step-by-step hardware repair guides  
+- Manufacturer support portals — Dell, HP, Lenovo, Apple  
+- TenForums — common Windows fix community
+
+> Keep these tools updated and your reference list handy — saves time and builds trust with customers.
+
+
 ## 📋 Customer Intake Protocol
 - “When did the issue start?”  
 - “What were you doing right before it happened?”  
@@ -30,21 +49,6 @@
 - Confirm backup status or offer one  
 - During reinstalls: **default to data preservation mode**  
 - Use external SSDs or cloud tools if needed  
-
----
-
-## 🛠️ Field USB Toolkit (Essentials)
-- Malwarebytes (offline installer)  
-- CrystalDiskInfo  
-- CCleaner  
-- Windows 10/11 ISO  
-- Driver packs (Dell, HP, etc.)  
-- Autoruns (Sysinternals)  
-- Portable browser  
-- WinRAR or 7zip  
-- Notepad++
-
-> Keep USB **clean, updated, and ready**.
 
 ---
 
