@@ -1,97 +1,82 @@
 # 📘 Geek Squad Technician Playbook — Field Best Practices
 
-> **Author:** Julian Smith   
-> **Purpose:** This is the mindset, tone, and execution guide for field technicians and repair agents. Reference this alongside the Binder when approaching any job.
+> **Author:** Julian Smith  
+> **Purpose:** A mindset, tone, and execution guide for field technicians and repair agents.  
+> Use alongside the Field Tech Index for consistent, high-quality service.
 
 ---
 
 ## 🧠 Technician Mindset
+- Be the **calm in the chaos** — the customer comes stressed, you bring clarity.  
+- Never assume the customer made a mistake — they came to you for help.  
+- **Diagnose, solve, and educate** — not just fix.
 
-- You are the **calm in the chaos** — the customer comes to you stressed, you bring clarity.
-- Never assume the customer did something "stupid" — assume they need help understanding.
-- Your job is **diagnose, solve, and educate** — not just fix.
-
-> "Fix the device, but also fix the feeling."
+> “Fix the device, but also fix the feeling.”
 
 ---
 
 ## 📋 Customer Intake Protocol
+- “When did the issue start?”  
+- “What were you doing right before it happened?”  
+- “Any suspicious clicks or downloads recently?”  
+- “What’s important to keep safe on your device?”  
 
-Always start with these:
-- “Can you tell me when the issue started?”
-- “What were you doing right before it happened?”
-- “Have you clicked on anything suspicious or downloaded anything lately?”
-- “What’s important to you on the device — any files, apps, or things we should be careful with?”
-
-**Never begin troubleshooting before identifying if there’s sensitive or irreplaceable data.**
+**Never start work until you know what data matters most.**
 
 ---
 
 ## 🔐 Data Safety SOP
-
-Before you touch:
-- Ask what data matters to them most
-- Confirm backup status or offer it
-- During OS reinstalls or resets: default to **data preservation mode** unless told otherwise
-- Use external SSD or cloud tools when needed
+- Ask what data matters most  
+- Confirm backup status or offer one  
+- During reinstalls: **default to data preservation mode**  
+- Use external SSDs or cloud tools if needed  
 
 ---
 
-## 🛠️ Field USB Toolkit
-
-**Recommended contents:**
-- Malwarebytes installer (offline copy)
-- CrystalDiskInfo
-- CCleaner
-- Windows 10/11 ISO or Media Creation Tool
-- Driver packs for Dell, HP, etc.
-- Autoruns (Sysinternals)
-- Portable browsers
-- WinRAR or 7zip
+## 🛠️ Field USB Toolkit (Essentials)
+- Malwarebytes (offline installer)  
+- CrystalDiskInfo  
+- CCleaner  
+- Windows 10/11 ISO  
+- Driver packs (Dell, HP, etc.)  
+- Autoruns (Sysinternals)  
+- Portable browser  
+- WinRAR or 7zip  
 - Notepad++
 
-> 🧠 Keep your USB clean, updated, and with a launcher folder.
+> Keep USB **clean, updated, and ready**.
 
 ---
 
-## 💬 Customer Communication Best Practices
+## 💬 Customer Communication
+- Speak like a **friendly translator**  
+- Validate the issue (“This happens more often than you’d think”)  
+- Always end with: what was fixed, what was safe, and prevention tips
 
-- Speak like a **friendly translator**, not a technician
-- Validate the issue (“Yeah, this happens more than you’d think”)
-- Always end with: what was fixed, what was kept safe, and what they can do to avoid it again
-
-### ⚡ Pro Script (Finish Every Job With This):
-> "Here’s what we found, here’s what we fixed, and here’s how you can avoid it in the future. Everything important was kept safe. Let us know if anything else comes up."
+**Pro Script:**  
+> “Here’s what we found, here’s what we fixed, and here’s how to avoid it in the future. Everything important was kept safe.”
 
 ---
 
 ## 🚩 Escalation Threshold
+- BIOS password lockouts  
+- Motherboard / charging port failure  
+- iCloud lockout  
+- Full drive failure  
+- Windows activation errors after reinstall  
 
-Know when to elevate:
-- BIOS password locked (customer forgot it)
-- Motherboard/charging port hardware issues
-- iCloud lockout
-- Full drive failure requiring forensic data recovery
-- Windows activation errors post-reinstall
-
-When in doubt: **pause, document, escalate**.
+**When in doubt:** Pause → Document → Escalate
 
 ---
 
 ## ✅ Ticket Closure Checklist
-- [ ] Customer concern addressed
-- [ ] System is booting + responsive
-- [ ] Critical data preserved or handed off
-- [ ] Customer understands what happened
-- [ ] Steps taken are clearly documented
-- [ ] Binder entry followed (if applicable)
+- [ ] Issue resolved  
+- [ ] System boots + runs well  
+- [ ] Critical data preserved  
+- [ ] Customer understands the fix  
+- [ ] Work documented clearly  
+- [ ] Binder entry followed if relevant
 
 ---
 
-## 📎 Notes
-- Update this playbook with any new learnings, patterns, or successful scripts
-- Use this as a guide for training new techs or interns
-- Keep printed copy in back office or binder sleeve
-
----
-> 🧪 NOTE: This file is an evolving framework. Final structure will be adapted based on Geek Squad’s internal protocols and customer service expectations post-hiring.
+> 🧪 Living document — update with new patterns, scripts, and lessons learned.
