@@ -1,45 +1,39 @@
 # 🗣️ Geek Squad Interview Talking Points — Binder Overview
 
-> **Created by:** Julian Smith  
-> **Purpose:** One-pager to reference or hand over during your Geek Squad interview. Explains the why, how, and structure of your custom tech binder.
+**Purpose:** Quick way to explain the value of my custom tech binder in the interview.
 
 ---
 
-## 🧠 Why I Made This Binder
-> "I started seeing patterns in tech support issues — most problems fall into predictable categories. So I created this binder to document efficient, repeatable workflows. It’s designed for speed, clarity, and customer communication."
+## 🧠 Why I Made It
+> "Most tech support issues fall into predictable patterns. I made this binder to document fast, repeatable workflows that make troubleshooting smoother and keep customer communication clear."
 
 ---
 
 ## 🛠️ How It Helps
-> "It helps reduce mental load during a busy shift. I can flip to a section, follow a checklist, and feel confident I’ve covered everything — while giving the customer a clear explanation at the end."
-
-> "The formatting is print-ready for lamination and easy to train others with."
+> "It reduces mental load during busy shifts — I can flip to a section, follow a checklist, and be confident nothing’s missed. It also makes it easier to explain the fix to the customer."
 
 ---
 
 ## 📂 What’s Inside
-Each category module includes:
-- Common symptoms
-- Tools and technician tips
-- Step-by-step workflow
-- Customer-friendly explanation script
-- A final success checklist
+- Common symptoms  
+- Tools & technician tips  
+- Step-by-step workflow  
+- Customer-friendly explanation  
+- Final success checklist  
 
 ---
 
-## 📘 The Playbook File
-> "There’s a best-practices file in progress too — not for fixing issues, but for how to think, communicate, and escalate as a tech. I left it flexible so I can tailor it to Geek Squad’s internal SOPs."
+## 📘 The Playbook
+> "Alongside it, I’ve built a Best Practices guide — focused on mindset, communication, and escalation. It’s flexible so it can adapt to Geek Squad’s SOPs."
 
 ---
 
 ## 🧾 Summary Pitch
-> "What I’m building isn’t just a binder — it’s a lightweight technician playbook. It’s built to scale, teach, and improve service delivery — and I’d love to adapt it for the way your team operates."
+> "It’s a lightweight technician playbook built to improve speed, consistency, and training. I’d be happy to adapt it to the way your team works."
 
 ---
 
 ## ✅ Bonus Line (If Asked a Tech Scenario)
-> "Can I show you how I handle that in my binder?"
+> "Can I show you how I’d handle that using my binder?"
 
-Then flip to the right printed page and walk them through it.
-
----
+Then flip to the page and walk them through it.
