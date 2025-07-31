@@ -1,6 +1,5 @@
 # 📘 Geek Squad Technician Playbook — Field Best Practices
 
-> **Author:** Julian Smith  
 > **Purpose:** A mindset, tone, and execution guide for field technicians and repair agents.  
 > Use alongside the Field Tech Index for consistent, high-quality service.
 
