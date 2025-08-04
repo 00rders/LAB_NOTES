@@ -210,4 +210,54 @@ git push
 # Useful when you moved or deleted files outside Git and get errors about "file outside repository".
 
 ---
+
+## 🛠 Git Remote Linking & Merge Conflict Reference
+
+### Linking a Local Repo to GitHub
+
+
+# Add the remote
+```
+git remote add origin git@github.com:USERNAME/REPO.git
+```
+# Rename current branch to main
+```
+git branch -M main
+```
+
+---
+
+### Overwrite GitHub Repo with Local Repo
+
+> ⚠️ **Warning:** This will completely replace GitHub’s contents with your local files.
+> Remote history will be lost.
+
+```
+git push -u origin main --force
+```
+
+---
+
+### Merge Local Repo with GitHub Repo
+
+> Use this if GitHub already has files (e.g., README) you want to keep.
+
+# Allow unrelated histories to merge
+```
+git pull origin main --allow-unrelated-histories
+```
+# Resolve merge conflicts if prompted, then push
+```
+git push -u origin main
+```
+
+---
+
+### Verify Remote Connection
+
+```bash
+git remote -v
+```
+
+---
 ✅ Keep this file updated as your workflow evolves. Think of it as your offline co-pilot.
