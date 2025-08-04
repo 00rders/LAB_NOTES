@@ -209,53 +209,61 @@ git push
 This tells Git to stop tracking the file in version history, even if it no longer exists locally.
 Useful when you moved or deleted files outside Git and get errors about "file outside repository".
 
+---
+
 ## 🛠 Git Remote Linking & Merge Conflict Reference
 
-### Linking a Local Repo to GitHub:
+### **Linking a Local Repo to GitHub**
 
+**When to Use:**
+You’ve created a repo locally and need to link it to a remote GitHub repository.
 
-Add the remote
-```
+```bash
+# Add the remote
 git remote add origin git@github.com:USERNAME/REPO.git
-```
-Rename current branch to main
-```
+
+# Rename current branch to main
 git branch -M main
 ```
 
 ---
 
-### Overwrite GitHub Repo with Local Repo
+### **Overwrite GitHub Repo with Local Repo**
 
-> ⚠️ **Warning:** This will completely replace GitHub’s contents with your local files.
-> Remote history will be lost.
+> ⚠️ **Warning:** This will completely replace the contents of the GitHub repo with your local files.
+> Remote history will be **permanently lost**.
 
-```
+**When to Use:**
+You want your local repo to be the **source of truth** and discard whatever is currently on GitHub.
+
+```bash
 git push -u origin main --force
 ```
 
 ---
 
-### Merge Local Repo with GitHub Repo
+### **Merge Local Repo with GitHub Repo**
 
-> Use this if GitHub already has files (e.g., README) you want to keep.
+**When to Use:**
+The GitHub repo already has commits/files (e.g., README) that you want to keep and combine with your local repo.
 
-### Allow unrelated histories to merge
-```
+```bash
+# Allow unrelated histories to merge
 git pull origin main --allow-unrelated-histories
-```
-### Resolve merge conflicts if prompted, then push
-```
+
+# Resolve merge conflicts if prompted, then push
 git push -u origin main
 ```
 
 ---
 
-### Verify Remote Connection
+### **Verify Remote Connection**
+
+**When to Use:**
+Check the current remote URL(s) configured for your local repo.
 
 ```bash
 git remote -v
 ```
 
----
 ✅ Keep this file updated as your workflow evolves. Think of it as your offline co-pilot.
