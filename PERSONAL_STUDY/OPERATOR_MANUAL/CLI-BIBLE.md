@@ -256,6 +256,25 @@ git push -u origin main
 ```bash
 git remote -v
 ```
+## 🚀 Git — Daily Workflow
+
+| Alias        | Command                   | Purpose |
+|--------------|---------------------------|---------|
+| `gadd .`     | `git add .`               | Stage all changes |
+| `gmessage`   | `git commit -m`           | Commit with message |
+| `gpush`      | `git push origin main`    | Push to remote main |
+
+## 💡 Oh My Zsh Git Aliases to Learn
+
+| Alias        | Command                                   | Purpose |
+|--------------|-------------------------------------------|---------|
+| `gst`        | `git status`                              | Show status |
+| `glg`        | `git log --stat`                          | Show log with stats |
+| `gco`        | `git checkout`                            | Switch branches |
+| `gcb`        | `git checkout -b`                         | Create new branch |
+| `gcm`        | `git checkout $(git_main_branch)`         | Switch to main branch |
+| `gpr`        | `git pull --rebase`                       | Pull with rebase |
+| `gp`         | `git push`                                | Push current branch |
 
 ---
 ✅ Keep this file updated as your workflow evolves. Think of it as your offline co-pilot.
