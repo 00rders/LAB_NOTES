@@ -198,29 +198,27 @@ This tells Git:
 
 ---
 
-# 🔥 UNTRACK A BROKEN OR MOVED FILE FROM GIT (without deleting it)
-# Use when Git is still tracking a file that no longer exists or was moved outside the repo
-
+## 🔥 UNTRACK A BROKEN OR MOVED FILE FROM GIT (without deleting it)
+Use when Git is still tracking a file that no longer exists or was moved outside the repo
+```
 git rm --cached path/to/file.ext
 git commit -m "Remove orphaned file from tracking"
 git push
-
-# 🧠 WHY IT MATTERS:
-# This tells Git to stop tracking the file in version history, even if it no longer exists locally.
-# Useful when you moved or deleted files outside Git and get errors about "file outside repository".
-
----
+```
+## 🧠 WHY IT MATTERS:
+This tells Git to stop tracking the file in version history, even if it no longer exists locally.
+Useful when you moved or deleted files outside Git and get errors about "file outside repository".
 
 ## 🛠 Git Remote Linking & Merge Conflict Reference
 
-### Linking a Local Repo to GitHub
+### Linking a Local Repo to GitHub:
 
 
-# Add the remote
+Add the remote
 ```
 git remote add origin git@github.com:USERNAME/REPO.git
 ```
-# Rename current branch to main
+Rename current branch to main
 ```
 git branch -M main
 ```
@@ -242,11 +240,11 @@ git push -u origin main --force
 
 > Use this if GitHub already has files (e.g., README) you want to keep.
 
-# Allow unrelated histories to merge
+### Allow unrelated histories to merge
 ```
 git pull origin main --allow-unrelated-histories
 ```
-# Resolve merge conflicts if prompted, then push
+### Resolve merge conflicts if prompted, then push
 ```
 git push -u origin main
 ```
