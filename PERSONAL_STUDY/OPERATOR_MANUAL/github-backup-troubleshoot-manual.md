@@ -15,7 +15,7 @@ Expected subfolders:
 * `ai-playbook/`
 * `automation-and-tools/`
 * `certifications/`
-* `cybersec-lab-notes/`
+* `LAB_NOTES/`
 * `iris/`
 * `bundles/` (not a Git repo — used for `.bundle` backups)
 
@@ -33,7 +33,7 @@ ls -d */ | while read d; do echo "$d" && test -d "$d/.git" && echo "✅ Git repo
 ### Confirm Clean Statuses
 
 ```bash
-for repo in ai-playbook automation-and-tools certifications cybersec-lab-notes iris; do
+for repo in ai-playbook automation-and-tools certifications LAB_NOTES iris; do
   echo "�� Status check: $repo"
     cd "$repo"
       git status
@@ -59,7 +59,7 @@ for repo in ai-playbook automation-and-tools certifications cybersec-lab-notes i
 
           ```bash
           cd /f/github-backup
-          rm -rf ai-playbook automation-and-tools certifications cybersec-lab-notes iris
+          rm -rf ai-playbook automation-and-tools certifications LAB_NOTES iris
           ```
 
           > ⚠️ Be sure you've backed up any local-only changes before deletion!
@@ -86,7 +86,7 @@ for repo in ai-playbook automation-and-tools certifications cybersec-lab-notes i
           git clone git@github.com:00rders/ai-playbook.git
           git clone git@github.com:00rders/automation-and-tools.git
           git clone git@github.com:00rders/certifications.git
-          git clone git@github.com:00rders/cybersec-lab-notes.git
+          git clone git@github.com:00rders/LAB_NOTES.git
           git clone git@github.com:00rders/iris.git
           ```
 
@@ -98,7 +98,7 @@ for repo in ai-playbook automation-and-tools certifications cybersec-lab-notes i
 
           ```bash
           cd /f/github-backup
-          for repo in ai-playbook automation-and-tools certifications cybersec-lab-notes iris; do
+          for repo in ai-playbook automation-and-tools certifications LAB_NOTES iris; do
             echo "�� Verifying $repo..."
               cd "$repo"
                 git status

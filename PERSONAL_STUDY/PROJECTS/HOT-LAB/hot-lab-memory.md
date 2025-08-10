@@ -60,7 +60,7 @@ Your MacBook Air is now designated as your **portable cybersecurity lab**, used 
 * Connected to GitHub using SSH (no HTTPS)
 * Verified push/pull access to:
 
-  * `cybersec-lab-notes`
+  * `LAB_NOTES`
   * `ai-playbook`
   * `automation-and-tools`
   * `iris`
@@ -102,7 +102,7 @@ Your MacBook Air is now designated as your **portable cybersecurity lab**, used 
 ~/hotgit-backup/
 ├── ai-playbook/
 ├── automation-and-tools/
-├── cybersec-lab-notes/
+├── LAB_NOTES/
 │   └── PERSONAL_STUDY/
 │       └── PROJECTS/
 │           └── macbook-portablelab/
