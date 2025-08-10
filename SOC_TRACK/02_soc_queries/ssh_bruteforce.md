@@ -2,37 +2,46 @@
 
 # Hydration Prompt — SSH Brute-Force Detection (Linux Auth)
 
-You are GPT-5 Thinking, my SOC mentor. Build a **noob→job-ready** detection lab for **SSH brute-force** using Splunk. I want to practice core SPL, triage flow, and interpretation.
+You are GPT-5 Thinking, my SOC mentor. Create a **noob→job-ready** detection lab for SSH brute-force in Splunk with **hard gating** after each section.
+
+**Gating Rules**
+- Each section ends with a **5‑question Knowledge Check** (mix of MCQ + short answer).
+- **Pass = 4/5**. If fail, deliver **micro‑remediation** (≤5 lines) and **new questions**.
+- Do **not** reveal the next section until I pass.
 
 ## My Context
-- I have Splunk running; I may or may not have `/var/log/auth.log` ingested yet.
-- If data is missing, instruct me how to point Splunk to a **local** log file I already have. No internet samples.
-- I prefer compact, repeatable labs with **expected outputs**.
+- Splunk is running; `/var/log/auth.log` may or may not be ingested.
+- If data is missing, provide an **optional** 2‑line monitor command using a sane sourcetype (no downloads).
+- Prefer compact labs with **expected outputs** and **how to interpret**.
 
-## Outcomes
-- Write SPL to surface brute-force patterns (failed login bursts, targeted accounts, noisy IPs).
-- Extract fields from raw events with `rex` when needed.
-- Distinguish false positives vs. real attacks and define a **triage checklist**.
+## Section A — Threat Model Snapshot (≤5 bullets)
+- Describe what brute‑force looks like in logs (failed attempts, cadence, users like `root`, varied `src_ip`, ports).
+**Knowledge Check A (5 Qs). Gate.**
 
-## Lab Structure (build it for me)
-1) **Threat Model Snapshot (≤5 bullets):** what brute-force looks like in logs.
-2) **Data Check:** quick SPL to confirm data presence; if missing, give 2-liner to monitor a local file (auth.log) with a **sane sourcetype**. Keep optional.
-3) **Hands-On Queries:**
-   - **Q1: Baseline failures** — show failed attempts with user + src_ip (table).
-   - **Q2: Frequency over time** — `timechart` by src_ip to see bursts.
-   - **Q3: Threshold** — flag src_ip with ≥N failures in M minutes.
-   - **Q4: Targets** — users and hosts most hit.
-   - For each query: **SPL**, **expected output** (shape), **how to interpret**, **next pivot**.
-4) **Mini Case:** give me a short simulated scenario and ask me to answer 3 investigation questions using the queries above.
-5) **SOC Triage Checklist:** evidence to capture, enrichment to run (whois/rdap placeholder), containment ideas, when to escalate.
-6) **Checkpoint Quiz (3 Qs)** and **Takeaways (3 bullets).**
+## Section B — Data Check
+- Quick SPL to confirm presence of relevant events.
+- If missing, give the optional 2‑liner to monitor a local log (auth.log) and a verification SPL.
+**Knowledge Check B (5 Qs on verifying data presence and correctness). Gate.**
 
-## Constraints
-- Keep explanations tight; favor field-tested SPL.
-- Include one `rex` example for IP or user extraction if my sourcetype lacks fields.
+## Section C — Hands‑On Queries (each with SPL, expected shape, interpretation, next pivot)
+- **Q1 Baseline failures**: table user + src_ip + _time.
+- **Q2 Frequency over time**: `timechart` by src_ip to see bursts.
+- **Q3 Thresholding**: flag src_ip with ≥N failures in M minutes.
+- **Q4 Targets**: which users/hosts are most hit.
+- Include **one `rex` example** for field extraction if needed.
+**Knowledge Check C (5 Qs using tiny snippets of example output). Gate.**
 
-## Deliverables
-- A ready-to-run lab with queries and interpretation notes.
-- A final **Copy/Paste Pack** with only the SPL blocks in order.
+## Section D — Mini Case
+- Provide a short scenario (e.g., multiple IPs, one very noisy; a legit admin success nearby).
+- Ask me **3 investigation questions** to answer using prior queries.
+**Knowledge Check D (grade my three answers; require reasonable justification). Gate.**
 
-Begin with the Threat Model Snapshot, then Data Check, then Q1–Q4.
+## Section E — SOC Triage Checklist
+- Evidence to capture, enrichment (whois/rdap placeholders), containment ideas, escalation criteria, reporting notes.
+**Knowledge Check E (5 scenario Qs choosing correct triage steps). Gate.**
+
+## Final — Copy/Paste Pack + Quiz
+- A **Copy/Paste Pack** of SPL in a logical order.
+- **Final Quiz (8 Qs)**; **pass = 6/8** to finish.
+
+Start at **Section A** and pause for **Knowledge Check A**.
