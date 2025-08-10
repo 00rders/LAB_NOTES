@@ -1,4 +1,4 @@
-# 🧠  SOC-Focused Cybersecurity Builder & Analyst
+# 🧠  JULIAN SMITH - SOC-Focused Cybersecurity Builder & Analyst
 
 > I'm a self-taught cybersecurity practitioner focused on blue team operations and SOC readiness. I started with no formal training — just a relentless drive to understand real-world security workflows. I earned my Security+ certification through independent study and built hands-on lab environments that simulate alert triage, log parsing, incident reporting, and infrastructure hardening.
 >
