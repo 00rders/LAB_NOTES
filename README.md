@@ -1,21 +1,28 @@
-# 🧠 Cybersecurity Home Lab — Blue Team Simulations & Real-World Growth
+🧠 Cybersecurity Home Lab — Blue Team Simulations & Real-World Growth
 
-> 📄 **[View My Resume](./RESUME.md)** — Full breakdown of my journey, skills, and project history
+This repo isn’t just a portfolio — it’s where I built myself into a SOC analyst from the ground up.
 
-This repo isn’t just a portfolio — it’s my learning engine.
+Everything inside was created to simulate real blue team workflows: triaging alerts, writing reports, mastering tools, and automating the repetitive stuff.
 
-Built from scratch as a legally controlled SOC simulation environment, this is where I train like it’s day one on the job.
+It’s structured to grow with me — but also readable and replicable by anyone trying to walk a similar path.
 
-Every folder, every doc, reflects a different piece in my evolving journey.
+🔍 Repo Overview
 
----
+Folder
 
-## 🔍 Repo Overview
+Purpose
 
-| Folder            | Purpose                                                                    |
-| ----------------- | -------------------------------------------------------------------------- |
-| `SOC_TRACK/`      | Analyst simulations: triage, enrichment, markdown report writing           |
-| `PERSONAL_STUDY/` | My step-by-step learning system (Linux, Networking, OPSEC, SIEM, etc.)     |
-| `PROJECTS/`       | Tools I built to make all of this possible (IRIS, git automation, NAS)     |
+SOC_TRACK/
 
-> All projects are built hands-on, documented live, and version-controlled for reflection.
+Hands-on SOC simulations: triage, enrichment, markdown report writing
+
+PERSONAL_STUDY/
+
+Structured learning modules: Linux, networking, OPSEC, SIEM, and more
+
+PROJECTS/
+
+Tools I built to support the lab: Git automation, NAS setup, IRIS (private R&D)
+
+Every file is version-controlled, every module is documented, and every tool was built to solve a real problem I faced.If you're aiming to land a blue team role, this lab shows what it takes.
+
