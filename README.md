@@ -1,4 +1,4 @@
-# 🧠 Cybersecurity Lab Notes — Blue Team Simulations & Real-World Growth
+# 🧠 Cybersecurity Home Lab — Blue Team Simulations & Real-World Growth
 
 > 📄 **[View My Resume](./RESUME.md)** — Full breakdown of my journey, skills, and project history
 
