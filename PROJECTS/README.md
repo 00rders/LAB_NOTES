@@ -13,7 +13,7 @@ A private, AI-powered SOC assistant I’m developing to streamline alert triage,
 
 ---
 
-## 💻 [`macbook-portable-lab/`](./macbook-portable-lab)
+## 💻 [`mobile-soc-lab/`](./mobile-soc-lab)
 **MacBook Hot-Lab Setup**  
 A lightweight, keyboard-driven Linux environment running inside my MacBook. Used for daily Linux practice, managing Git workflows, and simulating red/blue team ops using isolated Kali and Ubuntu VMs.  
 > *Interoperates with:* my home NAS and IRIS system over Tailscale + SSH
@@ -27,22 +27,11 @@ My custom NAS built using a GMKtec mini PC, OpenMediaVault, and a 2TB external S
 
 ---
 
-## 🧪 [`other/`](./other)
-**Scratchpad + Misc Tools**  
-A holding folder for small experiments, half-built tools, proof-of-concepts, and one-off scripting tasks that may evolve into full projects later.
-
----
-
 ## 🧠 Philosophy: Interoperable System Design
 
-Rather than treating each device as a silo, I’ve architected my workflow so every machine — my MacBook, desktop, and NAS — operates as part of a unified personal system:
-
-- **Render on Windows**, **edit on Linux**, **store on NAS**
 - SSH + Tailscale = seamless access from anywhere
 - Git = everything versioned, logged, backed up
 - Markdown-first = transparent, portable, professional
-
-> “Most people use tools. I’m building a system around myself.”
 
 ---
 
