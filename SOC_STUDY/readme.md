@@ -1,51 +1,78 @@
 # 🛡️ SOC_STUDY — AI-Driven SOC/SIEM Course Library
 
-Welcome to your **self-contained SOC/SIEM training program** 🎯  
-Every module is split into two files:
-
-- 🗣️ **`*-prompt.md`** — Universal, gated hydration prompt. Paste into ChatGPT to start a **noob → job-ready course** for that topic.  
-- 📝 **`*-notes.md`** — Your notes, lab results, screenshots, and reflections from completing that course.
+Welcome to your **self-contained SOC/SIEM training system** — built for mastering security analyst skills through guided, hands-on modules.
 
 ---
 
-## 📚 Course Modules
+## 🎓 How It Works
+
+Each module in this repo follows a universal learning format:
+
+- 🗣️ **`universal_prompt.md`** — The master prompt to start any course. Paste this into ChatGPT to generate a gated, hands-on learning path.
+- 📝 **Module `.md` files** — Your actual training: notes, walkthroughs, queries, and lab output.
+
+You only need one prompt — everything else lives in clearly named topic files.
+
+---
+
+## 📚 Modules
 
 ### 📂 00_foundations
-- 🗣️ [soc_roles_and_workflow-prompt.md](00_foundations/soc_roles_and_workflow-prompt.md) | 📝 [notes](00_foundations/soc_roles_and_workflow-notes.md)  
-- 🗣️ [soc_triage_checklist-prompt.md](00_foundations/soc_triage_checklist-prompt.md) | 📝 [notes](00_foundations/soc_triage_checklist-notes.md)  
-- 🗣️ [what_is_a_siem-prompt.md](00_foundations/what_is_a_siem-prompt.md) | 📝 [notes](00_foundations/what_is_a_siem-notes.md)  
+- [soc_roles_and_workflow.md](00_foundations/soc_roles_and_workflow.md)  
+- [soc_triage_checklist.md](00_foundations/soc_triage_checklist.md)  
+- [what_is_a_siem.md](00_foundations/what_is_a_siem.md)
 
 ### 📂 01_splunk_basics
-- 🗣️ [basic_spl_queries-prompt.md](01_splunk_basics/basic_spl_queries-prompt.md) | 📝 [notes](01_splunk_basics/basic_spl_queries-notes.md)  
-- 🗣️ [fields_sourcetypes_events-prompt.md](01_splunk_basics/fields_sourcetypes_events-prompt.md) | 📝 [notes](01_splunk_basics/fields_sourcetypes_events-notes.md)  
-- 🗣️ [ingest_sample_logs-prompt.md](01_splunk_basics/ingest_sample_logs-prompt.md) | 📝 [notes](01_splunk_basics/ingest_sample_logs-notes.md)  
-- 🗣️ [splunk-hotlab-setup-prompt.md](01_splunk_basics/splunk-hotlab-setup-prompt.md) | 📝 [notes](01_splunk_basics/splunk-hotlab-setup-notes.md)  
-- 🗣️ [splunk_cheatsheet-prompt.md](01_splunk_basics/splunk_cheatsheet-prompt.md) | 📝 [notes](01_splunk_basics/splunk_cheatsheet-notes.md)  
-- 🗣️ [understanding_indexes-prompt.md](01_splunk_basics/understanding_indexes-prompt.md) | 📝 [notes](01_splunk_basics/understanding_indexes-notes.md)  
+- [basic_spl_queries.md](01_splunk_basics/basic_spl_queries.md)  
+- [fields_sourcetypes_events.md](01_splunk_basics/fields_sourcetypes_events.md)  
+- [ingest_sample_logs.md](01_splunk_basics/ingest_sample_logs.md)  
+- [splunk-hotlab-setup.md](01_splunk_basics/splunk-hotlab-setup.md)  
+- [splunk_cheatsheet.md](01_splunk_basics/splunk_cheatsheet.md)  
+- [understanding_indexes.md](01_splunk_basics/understanding_indexes.md)
 
 ### 📂 02_soc_queries
-- 🗣️ [failed_login_investigation-prompt.md](02_soc_queries/failed_login_investigation-prompt.md) | 📝 [notes](02_soc_queries/failed_login_investigation-notes.md)  
-- 🗣️ [file_change_monitoring-prompt.md](02_soc_queries/file_change_monitoring-prompt.md) | 📝 [notes](02_soc_queries/file_change_monitoring-notes.md)  
-- 🗣️ [phishing_alert_response-prompt.md](02_soc_queries/phishing_alert_response-prompt.md) | 📝 [notes](02_soc_queries/phishing_alert_response-notes.md)  
-- 🗣️ [suspicious_ip_lookup-prompt.md](02_soc_queries/suspicious_ip_lookup-prompt.md) | 📝 [notes](02_soc_queries/suspicious_ip_lookup-notes.md)  
-- 🗣️ [suspicious_login_investigation-prompt.md](02_soc_queries/suspicious_login_investigation-prompt.md) | 📝 [notes](02_soc_queries/suspicious_login_investigation-notes.md)  
-- 🗣️ [ssh_bruteforce-prompt.md](02_soc_queries/ssh_bruteforce-prompt.md) | 📝 [notes](02_soc_queries/ssh_bruteforce-notes.md)  
+- [failed_login_investigation.md](02_soc_queries/failed_login_investigation.md)  
+- [file_change_monitoring.md](02_soc_queries/file_change_monitoring.md)  
+- [phishing_alert_response.md](02_soc_queries/phishing_alert_response.md)  
+- [suspicious_ip_lookup.md](02_soc_queries/suspicious_ip_lookup.md)  
+- [suspicious_login_investigation.md](02_soc_queries/suspicious_login_investigation.md)  
+- [ssh_bruteforce.md](02_soc_queries/ssh_bruteforce.md)
 
 ### 📂 03_alerting_and_dashboards
-- 🗣️ [building_dashboards-prompt.md](03_alerting_and_dashboards/building_dashboards-prompt.md) | 📝 [notes](03_alerting_and_dashboards/building_dashboards-notes.md)  
-- 🗣️ [creating_alerts-prompt.md](03_alerting_and_dashboards/creating_alerts-prompt.md) | 📝 [notes](03_alerting_and_dashboards/creating_alerts-notes.md)  
-- 🗣️ [mitre_mapping_cheatsheet-prompt.md](03_alerting_and_dashboards/mitre_mapping_cheatsheet-prompt.md) | 📝 [notes](03_alerting_and_dashboards/mitre_mapping_cheatsheet-notes.md)  
-- 🗣️ [ssh_bruteforce_dashboard-prompt.md](03_alerting_and_dashboards/ssh_bruteforce_dashboard-prompt.md) | 📝 [notes](03_alerting_and_dashboards/ssh_bruteforce_dashboard-notes.md)  
+- [building_dashboards.md](03_alerting_and_dashboards/building_dashboards.md)  
+- [creating_alerts.md](03_alerting_and_dashboards/creating_alerts.md)  
+- [mitre_mapping_cheatsheet.md](03_alerting_and_dashboards/mitre_mapping_cheatsheet.md)  
+- [ssh_bruteforce_dashboard.md](03_alerting_and_dashboards/ssh_bruteforce_dashboard.md)
 
 ### 📂 04_incident_response
-- 🗣️ [incident_simulation_template-prompt.md](04_incident_response/incident_simulation_template-prompt.md) | 📝 [notes](04_incident_response/incident_simulation_template-notes.md)  
-- 🗣️ [triage_quicklog-prompt.md](04_incident_response/triage_quicklog-prompt.md) | 📝 [notes](04_incident_response/triage_quicklog-notes.md)  
+- [incident_simulation_template.md](04_incident_response/incident_simulation_template.md)  
+- [triage_quicklog.md](04_incident_response/triage_quicklog.md)
 
 ### 📂 05_misc_techniques
-- 🗣️ [aws_s3_bucket_exposure-prompt.md](05_misc_techniques/aws_s3_bucket_exposure-prompt.md) | 📝 [notes](05_misc_techniques/aws_s3_bucket_exposure-notes.md)  
-- 🗣️ [detecting_wpa_cracking-prompt.md](05_misc_techniques/detecting_wpa_cracking-prompt.md) | 📝 [notes](05_misc_techniques/detecting_wpa_cracking-notes.md)  
-- 🗣️ [edr_tuning_noise_reduction-prompt.md](05_misc_techniques/edr_tuning_noise_reduction-prompt.md) | 📝 [notes](05_misc_techniques/edr_tuning_noise_reduction-notes.md)  
-- 🗣️ [sql_injection_detection-prompt.md](05_misc_techniques/sql_injection_detection-prompt.md) | 📝 [notes](05_misc_techniques/sql_injection_detection-notes.md)  
-- 🗣️ [xss_payload_alerting-prompt.md](05_misc_techniques/xss_payload_alerting-prompt.md) | 📝 [notes](05_misc_techniques/xss_payload_alerting-notes.md)  
+- [aws_s3_bucket_exposure.md](05_misc_techniques/aws_s3_bucket_exposure.md)  
+- [detecting_wpa_cracking.md](05_misc_techniques/detecting_wpa_cracking.md)  
+- [edr_tuning_noise_reduction.md](05_misc_techniques/edr_tuning_noise_reduction.md)  
+- [sql_injection_detection.md](05_misc_techniques/sql_injection_detection.md)  
+- [xss_payload_alerting.md](05_misc_techniques/xss_payload_alerting.md)
 
 ---
+
+## 📦 Assets
+
+### 📂 [SPLUNK/](SPLUNK/)
+- Hands-on assets: dashboards, log samples, lookups, SPL queries
+- Includes [RESOURCES](SPLUNK/RESOURCES/README.md) for official docs and generators
+
+---
+
+## 🧠 Start Learning
+
+Begin any course by opening [`universal_prompt.md`](universal_prompt.md) and pasting it into ChatGPT.  
+Then pick a module, follow the prompt’s guidance, and document your learning inside the corresponding `.md` file.
+
+---
+
+## 🛠️ Status
+
+> Built and maintained by a self-directed SOC analyst in training.  
+> This repo is actively evolving as part of a larger cybersecurity lab environment.
