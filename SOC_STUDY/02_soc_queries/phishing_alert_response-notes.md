@@ -70,6 +70,6 @@ An attempted phishing attack was detected via Microsoft Defender. The email cont
 ## 📁 File Location
 
 ```
-SOC_TRACK/
+SOC_STUDY/
 └── phishing_alert_response.md
 ```

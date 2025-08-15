@@ -34,7 +34,7 @@ Planned expansions:
 - ✅ Build **log-based triage methodologies** (alert > log > IOC > action)
 - ✅ Curate real-world **test data and incident scenarios**
 - ✅ Embed SOC cheat sheets and detection patterns
-- ✅ Integrate with `SOC_TRACK` to run modular simulations
+- ✅ Integrate with `SOC_STUDY` to run modular simulations
 
 ---
 

@@ -1,4 +1,4 @@
-# 🛡️ SOC_TRACK — AI-Driven SOC/SIEM Course Library
+# 🛡️ SOC_STUDY — AI-Driven SOC/SIEM Course Library
 
 Welcome to your **self-contained SOC/SIEM training program** 🎯  
 Every module is split into two files:

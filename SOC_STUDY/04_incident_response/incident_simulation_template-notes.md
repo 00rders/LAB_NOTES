@@ -86,7 +86,7 @@
 ### 📁 File Structure (optional)
 
 ```
-SOC_TRACK/
+SOC_STUDY/
 └── simulated_incidents/
     └── suspicious_psexec/
         ├── raw_alert.json

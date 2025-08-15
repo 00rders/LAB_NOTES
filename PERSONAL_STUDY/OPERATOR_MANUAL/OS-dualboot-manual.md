@@ -158,7 +158,7 @@ You should now boot into full KDE Plasma desktop 🎉
 
 ## 📂 File Location
 
-Saved as: `PERSONAL_STUDY/PROJECTS/COLD-LAB/coldlab-dualboot-tutorial.md`
+Saved as: `PROJECTS/COLD-LAB/coldlab-dualboot-tutorial.md`
 
 ---
 
