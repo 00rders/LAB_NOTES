@@ -25,17 +25,17 @@
 Modular SOC copilot for log parsing, IOC enrichment, and auto-generated incident reporting.
 → *CLI interface, markdown output, offline-first design*
 
-### 🧪 [Hot Lab – MacBook Cyber Lab Setup](https://github.com/00rders/LAB_NOTES/blob/main/projects/HOT_LAB/hotlab-CLI-config.md)
+### 🧪 [Hot Lab – MacBook Cyber Lab Setup](https://github.com/00rders/home-lab/blob/main/projects/HOT_LAB/hotlab-CLI-config.md)
 
 Secure, keyboard-driven Linux CLI setup for on-the-go cybersecurity workflows
 → *Hardened OS, GitHub SSH integration, remote access via Tailscale*
 
-### 🧊 [Cold Lab – EndeavourOS Dual-Boot + Desktop Lab](https://github.com/00rders/LAB_NOTES/blob/main/PERSONAL_STUDY/PROJECTS/cold-lab/dualboot-masterlog.md)
+### 🧊 [Cold Lab – EndeavourOS Dual-Boot + Desktop Lab](https://github.com/00rders/home-lab/blob/main/PERSONAL_STUDY/PROJECTS/cold-lab/dualboot-masterlog.md)
 
 Full desktop system recovery + bootloader fix for dual-boot with Windows
 → *Custom ricing, git-sync routines, backup management*
 
-### 💾 [GitHub Bundle Automation](https://github.com/00rders/LAB_NOTES/blob/main/PERSONAL_STUDY/PROJECTS/cold-lab/dualboot-masterlog.md)
+### 💾 [GitHub Bundle Automation](https://github.com/00rders/home-lab/blob/main/PERSONAL_STUDY/PROJECTS/cold-lab/dualboot-masterlog.md)
 
 Custom Bash script to generate `.bundle` backups of Git repos with rotation and logging
 → *Offline-capable, works with external SSD, clean CLI feedback*
@@ -53,16 +53,16 @@ My entire learning system is built around a self-designed AI-augmented workflow 
 
 > *"Everything I build is mine. AI helps me test, explain, and document — but I make every decision, write every command, and fix every mistake."*
 
-[🗃️ Learn more about my AI workflows](https://github.com/00rders/LAB_NOTES/blob/main/README_AI.md)
+[🗃️ Learn more about my AI workflows](https://github.com/00rders/home-lab/blob/main/README_AI.md)
 
 ---
 
 ## 📚 Lab Documentation Highlights
 
-* [`lab-admin-setup.md`](https://github.com/00rders/LAB_NOTES/blob/main/PERSONAL_STUDY/PROJECTS/macbook-hot-lab/lab-admin-setup.md)
-* [`CLI-BIBLE.md`](https://github.com/00rders/LAB_NOTES/blob/main/PERSONAL_STUDY/FOUNDER_MANUAL/CLI-BIBLE.md)
-* [`coldlab-dualboot-tutorial.md`](https://github.com/00rders/LAB_NOTES/blob/main/projects/COLD-LAB/coldlab-dualboot-tutorial.md)
-* [`ssh-access.md`](https://github.com/00rders/LAB_NOTES/blob/main/projects/HOT_LAB/ssh-access.md)
+* [`lab-admin-setup.md`](https://github.com/00rders/home-lab/blob/main/PERSONAL_STUDY/PROJECTS/macbook-hot-lab/lab-admin-setup.md)
+* [`CLI-BIBLE.md`](https://github.com/00rders/home-lab/blob/main/PERSONAL_STUDY/FOUNDER_MANUAL/CLI-BIBLE.md)
+* [`coldlab-dualboot-tutorial.md`](https://github.com/00rders/home-lab/blob/main/projects/COLD-LAB/coldlab-dualboot-tutorial.md)
+* [`ssh-access.md`](https://github.com/00rders/home-lab/blob/main/projects/HOT_LAB/ssh-access.md)
 * [`test_bounty_mode_2025-06-26.md`](https://github.com/00rders/iris/blob/main/docs/bounty/tests/test_bounty_mode_2025-06-26.md)
 
 ---

@@ -64,7 +64,7 @@ All Git repositories are centralized under the following structure:
 ```
 ~/hotgit-backup/
 ├── automation-and-tools
-├── LAB_NOTES
+├── home-lab
 ├── ai-playbook
 └── iris
 ```
@@ -79,7 +79,7 @@ Each repository was cloned with its SSH URI:
 
 ```bash
 git clone git@github.com:00rders/automation-and-tools.git ~/hotgit-backup/automation-and-tools
-git clone git@github.com:00rders/LAB_NOTES.git ~/hotgit-backup/LAB_NOTES
+git clone git@github.com:00rders/home-lab.git ~/hotgit-backup/home-lab
 git clone git@github.com:00rders/ai-playbook.git ~/hotgit-backup/ai-playbook
 git clone git@github.com:00rders/iris.git ~/hotgit-backup/iris
 ```

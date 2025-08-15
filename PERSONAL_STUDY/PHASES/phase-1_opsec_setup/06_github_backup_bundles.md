@@ -18,14 +18,14 @@ To address this, I built a custom script-based workflow that creates timestamped
 
 ```bash
 # Example output:
-✔️ Created bundle: LAB_NOTES-backup-2025-06-21.bundle
+✔️ Created bundle: home-lab-backup-2025-06-21.bundle
 ```
 
 ### 📂 Files & Paths
 
 - **Wrapper script path**: `~/.local/bin/gitbackupnow`
-- **Target repo**: `/f/github-backup/LAB_NOTES/`
-- **Destination for bundles**: `/f/github-backup/LAB_NOTES-backups/`
+- **Target repo**: `/f/github-backup/home-lab/`
+- **Destination for bundles**: `/f/github-backup/home-lab-backups/`
 
 ### 📁 Companion Repository
 
@@ -60,7 +60,7 @@ Relevant file: `scripts/gitbackupnow.sh`
 > You run `gitbackupnow`, plug your SSD into a fresh Kali VM on-site, and restore the bundle using:
 >
 > ```bash
-> git clone LAB_NOTES-backup-YYYY-MM-DD.bundle my-lab
+> git clone home-lab-backup-YYYY-MM-DD.bundle my-lab
 > ```
 > ⚠️ **Note**: You must have Git installed on the target machine when restoring.  
 > Use `git clone --bundle <filename>.bundle <folder>` for full commit history restoration.
