@@ -8,18 +8,15 @@ This page serves as both a **blueprint for others** and a **snapshot of systems 
 
 ## 🔐 [`iris/`](./iris)
 **IRIS – Incident Response Intelligence System**  
-A local-first, AI-powered SOC assistant that automates alert triage, log parsing, IOC enrichment, and markdown-based report generation. Built as a modular CLI pipeline with memory-governed components.
-
-> *Build it if:* you want a private SOC copilot that logs your shift and helps you respond faster.  
-> *Status:* `v1.0` foundation complete (soft-frozen)
+> *Private R&D* projects built to parse logs, triage + enrich alerts, and generate markdown reports. 
 
 ---
 
 ## 💻 [`mobile-soc-lab/`](./mobile-soc-lab)
 **Hot Lab – MacBook Cyber Terminal**  
-A minimal Linux setup (EndeavourOS + i3) running on my MacBook for portable cybersecurity work. It handles red/blue team practice, Git workflows, and remote access to the NAS and IRIS environments over Tailscale + SSH.
+A lightweight MacBook for portable cybersecurity work. Optimized for red/blue team practice, Git workflows, and remote access to NAS and other devices over Tailscale + SSH.
 
-> *Build it if:* you want a mobile lab that can operate anywhere, integrate with home infrastructure, and run VMs securely.
+> *Build it if:* you want a mobile lab that can simulate blue team ops from anywhere...anytime. (pairs best with nas-server)
 
 ---
 
